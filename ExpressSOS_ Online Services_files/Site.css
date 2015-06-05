@@ -1,0 +1,2032 @@
+﻿/*----------------------------------------------------------
+The base color for this template is #5c87b2. If you'd like
+to use a different color start by replacing all instances of
+#5c87b2 with your new color.
+----------------------------------------------------------*/
+body
+{
+	/*background-color: #5c87b2;     font-size: .75em;     font-family: Verdana, Helvetica, Sans-Serif;     margin: 0;     padding: 0;     color: #696969;*/
+}
+
+.PageMainHeader
+{
+	color: #336699;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: Arial;
+}
+
+.PageContentBlack
+{
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+}
+
+.PageContentBlackAlert
+{
+	color: #FF0000;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+}
+
+.PageContentBlackInstruction
+{
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+}
+
+.PageContentGrayInstruction
+{
+	color: #999999;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+}
+
+.PageContentBlackBold
+{
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+}
+
+/* Class used for text placed inside span instead of label for ADA compliance*/
+.PageContentBlackBoldSpan
+{
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 11px;
+	font-family: Arial;
+}
+
+.PageContentBlackMessages
+{
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 11px;
+	font-family: Arial;
+}
+
+.PageContentBlueSubHeading
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #6699cc;
+	font-size: 12px;
+	font-weight: bold;
+	padding-left:0px;
+	padding-right:0px;
+}
+
+/* Classes used for Life Line at top of views
+********************************************************************************/
+
+/* Class used to display a life line item (label) that has already been visited */
+.LifeLineVisited
+{
+	color: blue;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+}
+
+/* Class used to display a life line item (label) that is the current step */
+.LifeLineCurrent
+{
+	color: blue;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+}
+
+/* Class used to display a life line item (label) that has not been visited yet */
+.LifeLineUnvisited
+{
+	color: #999999;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+}
+
+/* Class used for the position of the life line at the top of the views */
+.LifeLine
+{
+	padding-top: 10px;
+	margin-left: 10px;
+}
+
+/******************************************************************************/
+
+.SectionHead
+{
+	color: #000066;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: Arial;
+}
+
+.HomepageLinkBlack
+{
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+}
+
+.HomepageLinkRed
+{
+	color: #ff0000;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+}
+
+.Homepagebutton
+{
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+}
+
+.LinkForTextSetting
+{
+	color: black;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+}
+
+.LinkMainmenu
+{
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: Purple;
+}
+.LinkTransactionPrereq
+{
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: black;
+	font-weight: bold;
+}
+
+.emptyCartImage
+{
+	height: 23px;
+	width: 34px;
+	background-image: url('../Content/Images/Cart_empty.gif') no-repeat transparent top;
+	display: block;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-style: none;
+}
+
+.notEmptyCartImage
+{
+	height: 23px;
+	width: 34px;
+	background-image: url('../Content/Images/Cart_on.gif') no-repeat transparent top;
+	display: block;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-style: none;
+}
+
+.buttonPlateImage
+{
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 80px;
+	width: 156px;
+	background-image: url('../Content/Images/Plates/Blue-th.gif');
+	background-attachment: inherit;
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+.buttonSpecialPlateImage
+{
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 80px;
+	width: 156px;
+	background-image: url('../Content/Images/Plates/Peninsulas-th.gif');
+	background-attachment: inherit;
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+
+.buttonNextClick
+{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 20px;
+	width: 109px;
+	background-image: url('../Content/Images/Btn_Next.gif');
+	background-attachment: inherit;
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonAddToCartClick
+{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 20px;
+	width: 109px;
+	background-image: url('../Content/Images/Btn_Add-to-Cart_Wizard.gif');
+	background-attachment: inherit;
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonStartClick
+{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 20px;
+	width: 109px;
+	background-image: url('../Content/Images/Btn_Start.gif');
+	background-attachment: inherit;
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonSearchVehicleClick
+{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 22px;
+	width: 120px;
+	background-image: url('../Content/Images/Search_Vehicle.bmp');
+	background-attachment: inherit;
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonRemoveSelectedClick
+{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 20px;
+	width: 121px;
+	background-image: url('../Content/Images/btn_RemoveSelected.gif');
+	background-attachment: inherit;
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonSelectedVehicleClick
+{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 20px;
+	width: 160px;
+	background-image: url('../Content/Images/Add_Selected_Vehicle.bmp');
+	background-attachment: inherit;
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonFinishClick
+{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 20px;
+	width: 109px;
+	background-image: url('../Content/Images/Btn_Finish.gif');
+	background-attachment: inherit;
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonSubmitClick
+{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 20px;
+	width: 109px;
+	background-image: url('../Content/Images/Btn_Submit.gif');
+	background-attachment: inherit;
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonNextClickDisable
+{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 20px;
+	width: 109px;
+	background-image: url('../Content/Images/Btn_NextDisable.gif');
+	background-attachment: inherit;
+	background-color: Transparent;
+	border-style: None;
+}
+.buttonPreviousClick
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: Black;
+	height: 20px;
+	width: 109px;
+	background-image: url('../Content/Images/Btn_Previous.gif');
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+.buttonCancelClick
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: Black;
+	height: 20px;
+	width: 88px;
+	background-image: url('../Content/Images/Btn_Cancel.gif');
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+.buttonCancelClickDisable
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: Black;
+	height: 20px;
+	width: 88px;
+	background-image: url('../Content/Images/Btn_CancelDisabled.gif');
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+.buttonResetClickDisable
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: Black;
+	height: 20px;
+	width: 84px;
+	background-image: url('../Content/Images/Btn_ResetDisable.gif');
+	background-color: Transparent;
+	border-style: None;
+}
+.buttonResetClick
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: Black;
+	height: 20px;
+	width: 84px;
+	background-image: url('../Content/Images/Btn_Reset.gif');
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonMakePayment
+{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 20px;
+	width: 104px;
+	background-image: url('../Content/Images/Btn_MakePayment.gif');
+	background-attachment: inherit;
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonContinueShopping
+{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 20px;
+	width: 109px;
+	background-image: url('../Content/Images/Btn_Cont-Shop_Go.gif');
+	background-attachment: inherit;
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonSubmit
+{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 20px;
+	width: 109px;
+	background-image: url('../Content/Images/Btn_Submit.gif');
+	background-attachment: inherit;
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonCheckout
+{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 25px;
+	width: 84px;
+	background-image: url('../Content/Images/Btn_Checkout.gif');
+	background-attachment: inherit;
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonCheckoutDisabled
+{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 25px;
+	width: 84px;
+	background-image: url('../Content/Images/Btn_Checkout_Disabled.gif');
+	background-attachment: inherit;
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonContinueShopping2
+{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 27px;
+	width: 84px;
+	background-image: url('../Content/Images/Btn_Cont-Shop_Go_2.gif');
+	background-attachment: inherit;
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonOK
+{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 20px;
+	width: 88px;
+	background-image: url('../Content/Images/btn_nor_OK.gif');
+	background-attachment: inherit;
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+	
+}
+
+
+.buttonSubmitDisabled
+{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 20px;
+	width: 109px;
+	background-image: url('../Content/Images/Btn_Submit_disabled.gif');
+	background-attachment: inherit;
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonEnterOneTimeMailingAddress
+{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 20px;
+	width: 53px;
+	background-image: url('../Content/Images/btn_Enter.gif');
+	background-attachment: inherit;
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonDebitOrCreditCard
+{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 25px;
+	width: 84px;
+	background-image: url('../Content/Images/Btn_Debit-Credit.gif');
+	background-attachment: inherit;
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonDebitOrCreditCardDisable
+{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 25px;
+	width: 84px;
+	background-image: url('../Content/Images/Btn_Debit-Credit.gif');
+	background-attachment: inherit;
+	background-color: Transparent;
+	border-style: None;
+}
+
+.buttonElectronicCheck
+{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 25px;
+	width: 84px;
+	background-image: url('../Content/Images/Btn_ElectronicCheck.gif');
+	background-attachment: inherit;
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonElectronicCheckDisable
+{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 25px;
+	width: 84px;
+	background-image: url('../Content/Images/Btn_ElectronicCheck.gif');
+	background-attachment: inherit;
+	background-color: Transparent;
+	border-style: None;
+}
+
+.buttonPrintEnabled
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: Black;
+	height: 20px;
+	width: 50px;
+	background-image: url('Images/Btn_PrintEnabled.gif');
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonCancelOneTimeAddress
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: Black;
+	height: 20px;
+	width: 216px;
+	background-image: url('Images/btn_nor_Cancel_One-Time_Mail.gif');
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonPreRegRemoveSelected
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: Black;
+	height: 20px;
+	width: 121px;
+	background-image: url('Images/btn_RemoveSelected.gif');
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+.buttonContinueShopping2Extended
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: Black;
+	height: 20px;
+	width: 121px;
+	background-image: url('Images/Btn_Cont-Shop_Go_2_Extended.gif');
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+.buttonDebitOrCreditCardExtended
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: Black;
+	height: 20px;
+	width: 121px;
+	background-image: url('Images/Btn_Debit-Credit_Extended.gif');
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+.buttonEnterOneTimeMailingAddressExtended
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: Black;
+	height: 20px;
+	width: 121px;
+	background-image: url('Images/btn_Enter_Extended.gif');
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonCheckoutExtended
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: Black;
+	height: 20px;
+	width: 121px;
+	background-image: url('Images/Btn_Checkout_Extended.gif');
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.LegentHeadText
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #6699cc;
+	font-size: 14px;
+	font-weight: bold;
+}
+.LegentHeadText legend
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #6699cc;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.WizardButtonPanel
+{
+	width: 740px;
+	height: 38px;
+	margin-top: 10px;
+	background-image: url( '../Content/Images/Wizard-Bg_Max.gif' );
+}
+
+.WizardButtonPanel table
+{
+	width: 740px;
+	height: 38px;
+}
+
+.WizardButtonPanel td
+{
+	padding-top: 3px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+/*
+    Used To Middle Align The Control With Respect To The Text Written Next To It
+*/
+.TextBoxMiddle
+{
+	vertical-align: middle;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+}
+
+.LinkSignOut
+{
+	color: Red;
+	text-decoration: 'underline';
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.LinkSignOutPurple
+{
+	color: purple;
+	text-decoration: 'underline';
+	font-weight: bold;
+	font-size: 12px;
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 100%;
+	font-size: 75%;
+	text-align: center;
+	height: 100%;
+}
+
+.header
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	width: 740px;
+	margin: 0px;
+	height: 100px;
+	padding: 0px;
+	text-align: left;
+	background-color: #E3E3E3;
+}
+
+.sitemenuLink
+{
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: smaller;
+	color: black;
+	background-color: Transparent;
+}
+.sitemenuLink:hover
+{
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: smaller;
+	color: black;
+	background-color: Transparent;
+}
+.sitemenuLink:visited
+{
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: smaller;
+	color: Purple;
+	background-color: Transparent;
+}
+
+.leftheaderpicture
+{
+	height: 75px;
+	width: 150px;
+	display: block;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-style: none;
+	background: url(../Content/Images/HeaderRight.JPG) no-repeat transparent top;
+}
+
+.searchlinkpicture
+{
+	width: 30px;
+	height: 24px;
+	display: block;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-style: none;
+	background: url(../Content/Images/btn_go_435_7.gif) no-repeat transparent left;
+}
+
+.footer
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	width: 740px;
+	clear: both;
+	padding: 0px 0px;
+	text-align: center;
+	color: black;
+}
+
+.leftside
+{
+	font-family: Arial, Helvetica, sans-serif;
+	width: 150px;
+	float: left;
+	color: Black;
+	min-height: 415px;
+	overflow: auto;
+}
+
+.rightside
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	float: right;
+	color: Black;
+	width: 740px;
+	text-align: left;
+	left: 10px;
+	background-color: White;
+	overflow: inherit;
+}
+
+.LinkMainmenu
+{
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: Purple;
+}
+
+.linkdivider
+{
+	color: #9B72BA;
+	height: 5px;
+}
+
+p, ul
+{
+	margin-bottom: 20px;
+	line-height: 1.6em;
+}
+
+.linkimg
+{
+	background-attachment: inherit;
+	background-color: Transparent;
+	border-style: None;
+	color: Black;
+	text-decoration: underline;
+}
+
+.linkimgPurple
+{
+	background-attachment: inherit;
+	background-color: Transparent;
+	border-style: None;
+	color:  Purple;
+	text-decoration: none;
+	font-size:11px;
+}
+
+.linkimgBlue
+{
+	background-attachment: inherit;
+	background-color: Transparent;
+	border-style: None;
+	color: Blue;
+	text-decoration: underline;
+}
+
+/* HEADINGS   
+----------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6
+{
+	font-size: 1.5em;
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-left: 10px;
+}
+
+h1
+{
+	color: #336699;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: Arial;
+}
+h2
+{
+	color: #000066;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: Arial;
+}
+h3
+{
+	font-size: 1.2em;
+}
+h4
+{
+	font-size: 1.1em;
+}
+h5, h6
+{
+	font-size: 1em;
+}
+
+/* this rule styles <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+	margin-top: 0;
+}
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+/* you can specify a greater or lesser percentage for the 
+page width. Or, you can specify an exact pixel width. */
+.page
+{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header
+{
+	position: relative;
+	margin-bottom: 0px;
+	color: #000;
+	padding: 0;
+}
+
+#header h1
+{
+	font-weight: bold;
+	padding: 5px 0;
+	margin: 0;
+	color: #fff;
+	border: none;
+	line-height: 2em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 32px !important;
+}
+
+#main
+{
+	padding: 30px 30px 15px 30px;
+	background-color: #fff;
+	margin-bottom: 30px;
+	_height: 1px; /* only IE6 applies CSS properties starting with an underscrore */
+}
+
+#footer
+{
+	color: #999;
+	padding: 10px 0;
+	text-align: center;
+	line-height: normal;
+	margin: 0;
+	font-size: .9em;
+}
+
+/* TAB MENU   
+----------------------------------------------------------*/
+ul#menu
+{
+	border-bottom: 1px #5C87B2 solid;
+	padding: 0 0 2px;
+	position: relative;
+	margin: 0;
+	text-align: right;
+}
+
+ul#menu li
+{
+	display: inline;
+	list-style: none;
+}
+
+ul#menu li#greeting
+{
+	padding: 10px 20px;
+	font-weight: bold;
+	text-decoration: none;
+	line-height: 2.8em;
+	color: #fff;
+}
+
+ul#menu li a
+{
+	padding: 10px 20px;
+	font-weight: bold;
+	text-decoration: none;
+	line-height: 2.8em;
+	background-color: #e8eef4;
+	color: #034af3;
+}
+
+ul#menu li a:hover
+{
+	background-color: #fff;
+	text-decoration: none;
+}
+
+ul#menu li a:active
+{
+	background-color: #a6e2a6;
+	text-decoration: none;
+}
+
+ul#menu li.selected a
+{
+	background-color: #fff;
+	color: #000;
+}
+
+/* FORM LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+fieldset
+{
+}
+
+fieldset p
+{
+	margin: 2px 12px 10px 10px;
+}
+
+fieldset legend
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #6699cc;
+	font-size: 14px;
+	font-weight: bold;
+	padding-left:0px;
+	padding-right:0px;
+}
+
+fieldset td
+{
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 10px;
+}
+
+fieldset label
+{
+	display: inline;
+}
+
+/* FIELDSET ELEMENT 
+----------------------------------------------------------*/
+
+.innerFieldset
+{
+	margin-bottom:10px; 
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:0px;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+
+.specialFieldsetDupRegReason
+{
+	margin-bottom:10px; 
+	margin-left:2px;
+	margin-right:5px;
+	margin-top:0px;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+.outterFieldset
+{
+	margin-bottom: 0px;
+}
+
+/*LABEL ELEMENT
+----------------------------------------------------------*/
+
+.small-wizard-label
+{
+	float: left;
+	width: 100px;
+}
+
+.small-wizard-label-boldtext
+{
+	float: left;
+	width: 100px;
+	font-weight: bold;
+}
+
+.small-wizard-label-inline
+{
+	display: inline;
+}
+
+.FullParagraph
+{
+	float: left;
+	width: 100%;
+}
+
+.medium-wizard-label
+{
+	float: left;
+	width: 150px;
+}
+
+.temp-wizard-label
+{
+	float: left;
+	width: 225px;
+}
+
+.large-wizard-label
+{
+	float: left;
+	width: 300px;
+}
+.large-wizard-label-boldtext
+{
+	float: left;
+	width: 300px;
+	font-weight: bold;
+}
+.singleliner-wizard-label
+{
+	float: left;
+	width: 900px;
+	list-style-type: disc;
+}
+
+.full-wizard-label
+{
+	float: left;
+	width: 100%;
+}
+fieldset label.inline
+{
+	display: inline;
+}
+
+legend
+{
+	font-size: 1.1em;
+	font-weight: 600;
+	padding: 2px 4px 8px 4px;
+}
+
+input[type="text"]
+{
+	width: 200px;
+	border: 1px solid #CCC;
+	vertical-align: middle;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+}
+
+input[type="text"].extra-small-input
+{
+	width: 75px;
+	border: 1px solid #CCC;
+	vertical-align: middle;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+}
+
+input[type="text"].smaller-input
+{
+	width: 100px;
+	border: 1px solid #CCC;
+	vertical-align: middle;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+}
+
+input[type="text"].small-input
+{
+	width: 150px;
+	border: 1px solid #CCC;
+	vertical-align: middle;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+}
+
+input[type="text"].city-input
+{
+	width: 100px;
+	border: 1px solid #CCC;
+	vertical-align: middle;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+}
+
+input[type="text"].city-input-address
+{
+	width: 150px;
+	border: 1px solid #CCC;
+	vertical-align: middle;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+}
+input[type="text"].five-char-input
+{
+	width: 40px;
+	border: 1px solid #CCC;
+}
+input[type="text"].single-char-input
+{
+	width: 20px;
+	border: 1px solid #CCC;
+	vertical-align: middle;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+}
+input[type="text"].four-char-input
+{
+	width: 30px;
+	border: 1px solid #CCC;
+}
+input[type="text"].readonly-input
+{
+	width: 150px;
+	border: 1px solid #CCC;
+	vertical-align: middle;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+}
+
+input[type="text"].large-input
+{
+	width: 200px;
+	border: 1px solid #CCC;
+	vertical-align: middle;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+}
+
+input[type="text"].address-input
+{
+	width: 23em;
+	border: 1px solid #CCC;
+	vertical-align: middle;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+}
+
+input[type="text"].extra-large-input
+{
+	width: 400px;
+	border: 1px solid #CCC;
+	vertical-align: middle;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+}
+
+input[type="text"].readonly-small-input
+{
+	width: 150px;
+	border: 1px solid #CCC;
+	vertical-align: middle;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+}
+
+input[type="text"].readonly-large-input
+{
+	width: 300px;
+	border: 1px solid #CCC;
+	vertical-align: middle;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+}
+
+input[type="password"]
+{
+	width: 200px;
+	border: 1px solid #CCC;
+}
+input[type="text"].five-char-input
+{
+	width: 40px;
+	border: 1px solid #CCC;
+}
+
+/* TABLE
+----------------------------------------------------------*/
+
+table.layouttest
+{
+	border: thin solid #000000;
+	border-collapse: collapse;
+	border-spacing: inherit;
+}
+
+table.layouttest tr
+{
+	border: thin solid #000000;
+}
+
+table.layouttest td
+{
+	border: thin solid #000000;
+}
+
+table.layouttest th
+{
+	border: thin solid #000000;
+}
+
+
+table
+{
+	border: 0px none #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+}
+
+table-border-hidden
+{
+	border: 0px none #FFFFFF;
+	border-collapse: collapse;
+}
+
+table td
+{
+	border: inherit;
+}
+
+table th
+{
+	padding: 6px 5px;
+	text-align: left; /*background-color: #e8eef4; */
+	background-color: #6699cc;
+	color: #FFFFFF;
+	border: solid 2px #e8eef4;
+}
+
+tr
+{
+	border: 0px none #FFFFFF;
+	margin: 0 auto;
+	height: 0;
+}
+
+/* for View Order */
+
+table.OrderView
+{
+	border: 0px none #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+	border-color:White;
+}
+
+table.OrderView td
+{
+	border: 3px solid #FFFFFF;
+	border-collapse: collapse;
+	/*padding:0px;*/
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+}
+
+table.OrderView th
+{
+	padding: 3px 5px;
+	text-align: left; /*background-color: #e8eef4; */
+	background-color: #6699cc;
+	color: #FFFFFF;
+	/*border: solid 2px #e8eef4;*/
+	font-size: 12px;
+	height: 20px;
+}
+
+table.OrderView tr
+{
+	border: 5px solid #FFFFFF;
+	margin: 0 auto;
+	height: 0;
+	border-collapse: collapse;
+}
+/* MISC  
+----------------------------------------------------------*/
+.clear
+{
+	clear: both;
+}
+
+.error
+{
+	color: Red;
+}
+
+#menucontainer
+{
+	margin-top: 40px;
+}
+
+div#title
+{
+	display: block;
+	float: left;
+	text-align: left;
+}
+
+#logindisplay
+{
+	font-size: 1.1em;
+	display: block;
+	text-align: right;
+	margin: 10px;
+	color: White;
+}
+
+#logindisplay a:link
+{
+	color: white;
+	text-decoration: underline;
+}
+
+#logindisplay a:visited
+{
+	color: white;
+	text-decoration: underline;
+}
+
+#logindisplay a:hover
+{
+	color: white;
+	text-decoration: none;
+}
+
+.field-validation-error
+{
+	color: #ff0000;
+}
+
+.input-validation-error
+{
+	border: 1px solid #ff0000;
+	background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+	font-weight: bold;
+	color: #ff0000;
+}
+.asterisk
+{
+	color: Red;
+	font-size: 12;
+	font-weight :bold ;
+}
+
+.DisplayName
+{
+	background-color: White;
+	font-weight: bold;
+}
+.Signout
+{
+	color: Red;
+	background-color: Yellow;
+}
+.exclamatory
+{
+	color: Red;
+	font-weight: bold;
+}
+.paragraph
+{
+	height: 0px;
+}
+/* LIST  
+----------------------------------------------------------*/
+/* Class used specifically for Eligiblility Requirement Page */
+ul.emphasizedlist
+{
+	list-style-type: square;
+	color: #336699;
+	margin-left:25px;
+	padding-left:0px;
+	padding-right:0px;
+	padding-top:0px;
+	padding-bottom:0px;
+	margin-right:0px;
+	margin-bottom:10px;
+	margin-top:10px;
+	
+	/*font-weight: bold;*/
+	/*list-style-image: url('../Content/Images/ulStyleList.GIF');
+	color:#000000;*/
+}
+/* Class used specifically for Eligiblility Requirement Page */
+ul.emphasizedlist li
+{
+	list-style-type: square;
+	color: #336699;
+	margin-left:0px;
+	padding-left:0px;
+	padding-right:0px;
+	padding-top:0px;
+	padding-bottom:0px;
+	margin-top:5px;
+	margin-right:0px;
+	margin-bottom:0px;
+	
+	/*font-weight: bold;*/
+	/*list-style-image: url('../Content/Images/ulStyleList.GIF');
+	color:#000000;*/
+}
+
+/*************************************************/
+/* VALIDATION ERROR*/
+.validation-summary-errors-container
+{
+	background-color: white;
+	border-style: none;
+}
+.validation-summary-errors-image
+{
+	background-image: url('../Content/Images/ErrorIcon.JPG');
+	margin-right: 3px;
+	background-attachment: inherit;
+	background-color: Transparent;
+	height: 32px;
+	width: 30px;
+	float: left;
+	background-repeat: no-repeat;
+}
+.field-validation-error
+{
+	color: #dc3535;
+}
+.input-validation-error
+{
+	border: 1px solid #df6b6b;
+	background-color: #ffffdf;
+}
+span.validation-summary-errors
+{
+	font-weight: bold;
+}
+.ExceptionContentBlack
+{
+	color: Purple;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial,Helvetica, sans-serif;
+}
+.ExceptionContentBlackBold
+{
+	color: Purple;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial,Helvetica, sans-serif;
+}
+
+/* For Pagination 
+---------------------------------------------------------*/
+.pagination
+{
+	font-size: 0.9em;
+	color: Black;
+}
+
+.pagination span.current
+{
+	background-color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	color: #333333;
+	font-weight: bold;
+	margin: 2px;
+	padding: 2px 4px;
+}
+
+.pagination a, .pagination a:link, .pagination a:active, .pagination a:visited
+{
+	background-color: #FFFFFF;
+	border: 1px solid #80ABFF;
+	font-weight: bold;
+	margin: 2px;
+	padding: 2px 4px;
+	text-decoration: none;
+}
+
+.pagination a:hover, .pagination a:focus
+{
+	background-color: #4D8AFF;
+	border: 1px solid #0057FF;
+	color: #FFFFFF;
+}
+
+
+/* you can specify a greater or lesser percentage for the 
+page width. Or, you can specify an exact pixel width. */
+.page
+{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p, ul
+{
+	margin-bottom: 20px;
+	line-height: 1.6em;
+}
+
+/* Class for hiding a label for ADA compliance */
+
+.HiddenLabelForADA
+{
+	display: none;
+}
+
+.PageContentBlackSpanSameasNotResidenceAddress
+{
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+	padding-right: 15px;
+	vertical-align: middle;
+}
+.PageContentBlackSpanSameasResidenceAddress
+{
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+	padding-right: 20px;
+	vertical-align: middle;
+}
+
+/* Class for Opt Out Confirmation label*/
+.webOptOutConfirmMessageLabel
+{
+    color: #723046;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial;
+}
+
+/*Class for required label*/
+.required
+{
+	color: Gray;
+	font-size: 12px;
+}
+
+/* Added class for Action Link button not to have the underline */
+
+a.mainNav:link
+{
+	/* Applies to unvisited links of class mainNav */
+	text-decoration: none;
+	color: #ffffff;
+	background-repeat: no-repeat;
+	font-size: smaller;
+}
+a.mainNav:visited
+{
+	/* Applies to visited links of class mainNav */
+	text-decoration: none;
+	color: #ffffff;
+	font-size: smaller;
+	background-repeat: no-repeat;
+}
+a.mainNav:hover
+{
+	/* Applies to links under the pointer of class mainNav */
+	text-decoration: none;
+	color: #ffffff;
+	font-size: smaller;
+	background-repeat: no-repeat;
+}
+a.mainNav:active
+{
+	/* Applies to activated links of class mainNav */
+	text-decoration: none;
+	font-size: smaller;
+	color: #ffffff;
+	background-repeat: no-repeat;
+	font-size: smaller;
+}
+
+/* Added class for Background image of div control */
+.divBackGroundImage
+{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 20px;
+	width: 100px;
+	background-image: url('../Content/Images/TestPrint.JPG');
+	background-attachment: inherit;
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+	vertical-align: baseline;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.buttonQuestionMark
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: Black;
+	height: 20px;
+	width: 20px;
+	background-image: url('../Content/Images/QuestionMark.GIF');
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonSelectAll
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: Black;
+	height: 17px;
+	width: 66px;
+	background-image: url('../Content/Images/selectall.jpg');
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonRemoveAll
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: Black;
+	height: 17px;
+	width: 69px;
+	background-image: url('../Content/Images/removeall.jpg');
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonSelectYes
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: Black;
+	height: 17px;
+	width: 63px;
+	background-image: url('../Content/Images/selectyes.jpg');
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonSelectNo
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: Black;
+	height: 17px;
+	width: 61px;
+	background-image: url('../Content/Images/selectno.jpg');
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonYes
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: Black;
+	height: 20px;
+	width: 88px;
+	background-image: url('../Content/Images/yes_button.gif');
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonNo
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: Black;
+	height: 20px;
+	width: 88px;
+	background-image: url('../Content/Images/no_button.gif');
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonModifyClick
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: Black;
+	height: 20px;
+	width: 60px;
+	background-image: url('../Content/Images/btn_Modify.gif');
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+	
+}
+
+
+.buttonCancelAddressChange
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: Black;
+	height: 20px;
+	width: 159px;
+	background-image: url('../Content/Images/btn_CancelAddressChange.gif');
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonCancelPhoneChange
+{   
+	font-family: Arial, Helvetica, sans-serif;
+	color: Black;
+	height: 20px;
+	width: 148px;
+	background-image: url('../Content/Images/btn_nor_Cancel_Phone_Change.gif');
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonCancelEmailChange
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: Black;
+	height: 20px;
+	width: 148px;
+	background-image: url('../Content/Images/btn_nor_Cancel_E-mail_Change.gif');
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+
+.buttonCancelEmergencyChange
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: Black;
+	height: 20px;
+	width: 225px;
+	background-image: url('../Content/Images/btn_CancelEmergencyChange.gif');
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+.DropdownList
+{
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+}
+
+.TextArea
+{
+	height: 40px;
+	width: 270px;
+}
+
+.buttonCheckboxChecked
+{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 13px;
+	width: 13px;
+	background-image: url('../Content/Images/btnChekboxCheked.GIF');
+	background-repeat: no-repeat;
+	background-attachment: inherit;
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;	
+}
+.buttonCheckboxUnChecked
+{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 13px;
+	width: 13px;
+	background-image: url('../Content/Images/btnChekboxUncheked.GIF');
+	background-repeat: no-repeat;
+	background-attachment: inherit;
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.buttonInformation
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: Black;
+	height: 35px;
+	width: 35px;
+	background-image: url('../Content/Images/Icon_Information_Message.jpg');
+	background-color: Transparent;
+	border-style: None;
+	cursor: hand;
+}
+
+.UserBusinessMessageDisplay
+{
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 14px;
+	font-family :Arial;
+}
+
+.UserBusinessErrorMessageDisplay
+{
+	color: #a43500;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 14px;
+	font-family :Arial;
+}
+.PageContentBlackCapitalize
+{
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial;
+	text-transform:capitalize;
+}
+.InformativeMessage
+{
+	color: Maroon;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 11px;
+	font-family: Arial;
+	text-align: justify;
+}
+
+.InformativeMessageBold
+{
+	color: Maroon;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 11px;
+	font-family: Arial;
+	text-align: justify;
+}
+
+input[type="text"].Addressline2
+{
+	width: 23em;	
+	vertical-align: middle;
+	background-color: #ddd;
+	
+}
+
+.SignoutAndBackbuttonMessage
+{
+    color: Maroon;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 13px;
+	font-family: Arial;
+	text-align: center ;
+    
+}
+
+
+
+
+
+
+
+
+
