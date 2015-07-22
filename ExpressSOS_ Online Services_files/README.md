@@ -1,2 +1,0 @@
-# responsiveSOS
-Responsive ExpressSOS

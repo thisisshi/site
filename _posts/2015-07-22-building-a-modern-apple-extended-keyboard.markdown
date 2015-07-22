@@ -1,0 +1,72 @@
+---
+layout: post
+title:  "Building a Modern Apple Extended Keyboard"
+date:   2015-07-22 19:00:44
+categories: keyboards
+---
+![AEK60](http://i.imgur.com/7IEtL3z.jpg){: .u-max-full-width header-image }
+
+Last summer I saw a Vintage Apple Extended Keyboard II and instantly fell in love with the keycaps that were on it. Weird, I know. Korean keyboard enthusiast Sprit [posted some pictures](https://geekhack.org/?topic=49930.0) on the popular Mechanical Keyboard forum Geekhack and I immediatly told myself I needed to build one for myself.
+
+That was essentially the start of what I would consider my now "hardcore" keyboard hobby. I had previously seen and heard of mechanical keyboards before -- in fact, the very first keyboard I had ever typed on was a Silicon Graphics AT101, with cream dampened ALPS switches. I could tell at the time that the keyboard felt much, much better than the alternative rubber dome keyboard that was included with my family's new computer but I didn't know why... at the time. All I knew was that even after my dad had moved the old keyboard out and plugged in the new one, I instantly disliked the typing experience.
+
+#####A Brief History of Mechanical Keyboards and the AEKII#####
+
+Now, while I had never actually typed on an AEKII (Apple Extended Keyboard II) before, many models of the AEKII used the same keyswitches as that old SGI board that I had loved growing up. Sadly, after computers got much more popular (we're talking early 90's) manufacturers decided that it was far too costly to include these beautifully crafted and engineered things called "Mechanical Keyboards". Nowadays, keyboards are typically made by using some sort of circuit sheet or PCB, attaching a rubber sheet over top, and finally putting keycaps on top of that in some housing. Traditional mechanical keyboards used individual keyswitches, similar to the ones found in things like guitar pedals and car doors, to receive input from the user. Obviously, building a keyswitch for each key on a typical 108 key keyboard is costly. Furthermore, most computer users aren't as invested in using high quality input devices.
+
+The first Apple Extended Keyboard II shipped in 1990 with the Macintosh II and SE. Needless to say, the keyboard is a part of computing history. Apple manufactured a variety of models of the keyboard with all sorts of various switches. The important fact though, is that these switches were all of the ALPS stem variety. ALPS, a Japanese electronics company, produced its ALPS switches from as early as 1983. Sadly, it no longer produces keyboard switches as the market has become more and more niche.
+
+#####Enter Matias#####
+
+Matias, an American company that mainly produces Apple Macintosh accessories was well invested in creating mechanical keyboards for Apple/Mac users. Once ALPS decided to stop the production of its keyswitches, the Matias company took it open itself to begin producing keyswitches of its own, now known as the Matias Quiet Click, Matias Click, and Matias Linear switches.
+
+For this build, I purchased 200 Matias Quiet Click switches directly from them for $60 shipped. This would be more than enough to build at least three 60% alps board if I wanted.
+
+#####Matias Quiet Click Keyswitch Review#####
+
+![Matias Quiet Click Switch Blueprint](http://www.micwil.com/images/gallery/matias_mini_quiet_pro_p3_825x600.jpg){: .u-max-full-width header-image }
+
+
+Contrary to popular belief, not all mechanical keyboards are necessarily loud. In fact, when Matias claims that the Quiet Click switches are quiet, they mean it. They're much less loud than Cherry MX Blues and Greens of course, and by my ear, even a lot quieter than Cherry MX Clears or Cherry MX Browns. This made it the perfect option to use as a keyboard to bring and use at work.
+
+In terms of feel, the Matias Quiet Click switches are a very good option for those that may think that the widly available Cherry MX Blue, Browns, and Reds are too soft but may want to stay away from the stiffer Cherry MX Clear. In my mind these switches' required actuation force is a very good balance between the stiffness of a Cherry MX Clear and the lightness of a Cherry MX Brown. In fact, I am quite close to counting these switches as my favorite switch of all time.
+
+{: .u-full-width}
+| Switch Name  | Actuation Force | Type |
+| ------------- | ------------- || ------------- |
+| Matias Quiet Click  | 60±5 cN | Tactile  |
+| Cherry MX Clear  | 55 cN | Tactile  |
+| Cherry MX Ergoclear  | 45 cN  | Tactile  |
+| Cherry MX Blue | 45 cN  | Clicky  |
+| Topre  | 45 cN  | Linear  |
+| Cherry MX Brown  | 45 cN  | Tactile  |
+|Cherry MX Red|45 cN|Linear|
+
+Source: [Deskthority](http://www.deskthority.net)
+
+Now, while on paper the Matias Quiet Click seem to be a much heavier switch than even a Cherry MX Clear, that has not been my experience in day to day use.
+
+#####The PCB and Plate#####
+
+Originally, I had planned on handwiring the board together, using diodes and spare wire to connect each switch individually. thankfully, Hasu on geekhack started a group buy for his Alps64 PCB which I immediatly jumped on. As that was going into production and people were placing their orders, geekhacker nubbinator also set up a group buy for a stainless steel AEKII plate which I also joined as well.
+
+#####Putting it all together#####
+
+To finally assemble everything, all I had to do was solder the through-hole diodes that Hasu included, and install the switches on the plate and solder those in. All in all, the total time that was required was probably around a few hours. Now, it was time for the fun part.
+
+Arguably, the best part of using a TMK compatible controller is the ability to create up to 32 custom layers on the board, all accessable through certain key combinations. This was my first time writing custom firmware for the keyboard and writing layouts was some of the easiest programming I've done in a long time. For those that aren't at all familiar with programming this could pose a challenge but luckily to get up and running it really doesn't require a whole lot of expertise.
+
+[AEKII Plate Group Buy](https://geekhack.org/index.php?topic=71416.0)
+
+[60% Alps PCB](https://geekhack.org/index.php?topic=69740.0)
+
+To Program the keyboard, you'll need to clone TMK's keyboard firmware repository from his [github](https://github.com/tmk/tmk_keyboard). There, you'll find all the resources necessary to start writing your layouts. [Here's](https://github.com/thisisshi/tmk_keyboard/blob/master/keyboard/alps64/Guide.md) a detailed, step by step way to get started.
+
+And, that's it! Now, check out some beauty shots of the keyboard:
+
+![AEK60](http://i.imgur.com/9eOwwh7.jpg){: .u-max-full-width header-image }
+
+![AEK60](http://i.imgur.com/U8ExaaZ.jpg){: .u-max-full-width header-image }
+
+Thanks for reading!
+
