@@ -5,7 +5,7 @@ date:   2015-07-23 09:00:00
 categories: interviewprep
 ---
 
-Fact: I've never done an hones to God, real life, 100% legit coding interview. At least, I don't think I have. I've had the excellent (or perhaps not so excellent) ability to somehow not have to do a particularly hard technical interview... ever. So, with graduation coming in _less than a year_, I've decided to brush up on some concepts that I may or may not have forgotten.
+Fact: I've never done an honest to God, real life, 100% legit coding interview. At least, I don't think I have. I've had the excellent (or perhaps not so excellent) ability to somehow not have to do a particularly hard technical interview... ever. So, with graduation coming in _less than a year_, I've decided to brush up on some concepts that I may or may not have forgotten.
 
 Since teaching a subject is a great indicator that you yourself have learned the information, I've decided to devote at least some of my blog posts to working through the great books that are _Programming Interviews Exposed_ and _Cracking the Coding Interview_.
 
@@ -57,4 +57,6 @@ bool insertInFront(node  **head, int data){
 
 Let's go line by line. In the first line of the function, we're allocating memory for the new node by using the method `malloc` and geting the size through `sizeOf`. Next, we should check whether or not the memory was allocated correctly by checking the existence of `newNode`. Finally, we being setting the values of the node. Firstly, the data is set. This shouldn't require much additional explanation. The next line however, is a bit tricky. Many people are tempted to write the pointer as `newNode->next = head`. After all, the head variable is given to you. However, if you were to write that, the next pointer wouldn't be pointing at a location in memory at all. Instead, it would be pointing at the local head variable. Now, again, the next line could also cause people to write `head = newNode`. Instead, what should be done is `*head = newNode`. Now, we're correctly setting the pointer for head to the newNode we just created. Finally, we return true when the function completes successfully.
 
-Now, to insert a new node, we must take into consideration the same questions as before. Where is the next node in the list? Does the next node even exist? What about the previous node? The first 
+Now, to insert a new node, we must take into consideration the same questions as before. Where is the next node in the list? Does the next node even exist? What about the previous node? 
+
+To Be Continued.
