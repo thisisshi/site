@@ -26,7 +26,7 @@ What I knew that I wanted from the application was at least:
 
 To satisfy the first one, I just had to do some string manipulation and analysis. A call to the function `{{calcInstances()}}` takes in the current input that the user has provided and begins to calculate the frequency of each character in the string. At first, I approached this by writing a huge switch case statement which technically would do the trick but at the cost of having a huge block of code that could be more efficently written.
 
-```
+```javascript
 for (var i = 0; i < $scope.cryptInput.length; i++) {
 			switch($scope.cryptInput[i]){
 				case "a":
@@ -65,7 +65,7 @@ for (var i = 0; i < $scope.cryptInput.length; i++) {
 Yuck. And that's just the for loop. Instead, apparently you can do this magical thing in Javascript to access properties in objects through strings like so: `$scope.hash[cryptInput[i]]` where hash is an object with a property that has the name stored in variable `cryptInput[i]`.
 
 
-```
+```javascript
 	$scope.calcInstances = function(){
 		$scope.cryptInput = angular.uppercase($scope.cryptInput);
 		$scope.hash = angular.copy($scope.hashmaster);
