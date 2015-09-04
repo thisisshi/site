@@ -27,39 +27,39 @@ What I knew that I wanted from the application was at least:
 To satisfy the first one, I just had to do some string manipulation and analysis. A call to the function `{{calcInstances()}}` takes in the current input that the user has provided and begins to calculate the frequency of each character in the string. At first, I approached this by writing a huge switch case statement which technically would do the trick but at the cost of having a huge block of code that could be more efficently written.
 
 ```javascript
-for (var i = 0; i < $scope.cryptInput.length; i++) {
-			switch($scope.cryptInput[i]){
-				case "a":
-				$scope.hash.a = $scope.hash.a + 1
-				break;
-				case "b":
-				$scope.hash.b = $scope.hash.b + 1
-				break;
-				case "c":
-				$scope.hash.c = $scope.hash.c + 1
-				break;
-				case "d":	
-				$scope.hash.d = $scope.hash.d + 1
-				break;
-				case "e":
-				$scope.hash.e = $scope.hash.e + 1
-				break;
-				case "f":
-				$scope.hash.f = $scope.hash.f + 1
-				break;
-				case "g":
-				$scope.hash.g = $scope.hash.g + 1
-				break;
-				case "h":
-				$scope.hash.h = $scope.hash.h + 1
-				break;
-				case "i":
-				$scope.hash.i = $scope.hash.i + 1
-				break;
-				case "j":
-				$scope.hash.j = $scope.hash.j + 1
-				break;
-				...
+	for (var i = 0; i < $scope.cryptInput.length; i++) {
+				switch($scope.cryptInput[i]){
+					case "a":
+					$scope.hash.a = $scope.hash.a + 1
+					break;
+					case "b":
+					$scope.hash.b = $scope.hash.b + 1
+					break;
+					case "c":
+					$scope.hash.c = $scope.hash.c + 1
+					break;
+					case "d":	
+					$scope.hash.d = $scope.hash.d + 1
+					break;
+					case "e":
+					$scope.hash.e = $scope.hash.e + 1
+					break;
+					case "f":
+					$scope.hash.f = $scope.hash.f + 1
+					break;
+					case "g":
+					$scope.hash.g = $scope.hash.g + 1
+					break;
+					case "h":
+					$scope.hash.h = $scope.hash.h + 1
+					break;
+					case "i":
+					$scope.hash.i = $scope.hash.i + 1
+					break;
+					case "j":
+					$scope.hash.j = $scope.hash.j + 1
+					break;
+					...
 ```
 
 Yuck. And that's just the for loop. Instead, apparently you can do this magical thing in Javascript to access properties in objects through strings like so: `$scope.hash[cryptInput[i]]` where hash is an object with a property that has the name stored in variable `cryptInput[i]`.
@@ -73,7 +73,6 @@ Yuck. And that's just the for loop. Instead, apparently you can do this magical 
 		$scope.max = angular.copy($scope.maxmaster)
 		// Gets the Instances of each character
 		for (var i = 0; i < $scope.cryptInput.length; i++) {
-
 			$scope.hash[$scope.cryptInput[i]]++;
 			$scope.percent[$scope.cryptInput[i]] =  ($scope.hash[$scope.cryptInput[i]] / $scope.cryptInput.length)*100;
 			if ($scope.max.value < $scope.hash[$scope.cryptInput[i]]){
