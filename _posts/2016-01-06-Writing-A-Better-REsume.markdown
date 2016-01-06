@@ -57,7 +57,7 @@ Another big "No-No" is the inclusion of a picture in the resume. According to US
 
 A lot of these resumes also feature a ton of color. This is fine, if you're able to make sure that 1) You're always able to present the resume in color, as intended or 2) It looks fine in black and white. Everytime I've sat down in a job interview, the interviewer had a copy of my resume... in black and white. I can only imagine how _terrible_ some of the designs would look that prominently feature low contrast color combinations.
 
-Finally, a lot of these resumes seem to forget who the audience is. You're targeting HR departments and recruiters, not graphic designers. I mean, your resume might end up in the hands of a graphic designer at some point, but it's probably going through HR first. That's the first hurdle you ahve to get through. Putting your experience in a timeline that's hard to read and not very useful isn't going to wow HR. It's going to make you a joke at the water cooler. 
+Finally, a lot of these resumes seem to forget who the audience is. You're targeting HR departments and recruiters, not graphic designers. I mean, your resume might end up in the hands of a graphic designer at some point, but it's probably going through HR first. That's the first hurdle you have to get through. Putting your experience in a timeline that's hard to read and not very useful isn't going to wow HR. It's going to make you a joke at the water cooler. 
 
 ### Redesigning My Personal Resume ###
 
