@@ -85,4 +85,4 @@ My favorite part of the resume, however, is probably the Languages & Skills port
 
 <img src="http://i.imgur.com/dZp9Y0p.png" class="u-max-full-width header-image">
 
-That's the resume update. I'm not really sure why I wrote this other than because I thought it would be nice to keep track of my thought process while (re)designing my resume. Hope you found it interesting. My personal template that I edited for this project can be found at my [Github](www.github.com/thisisshi).
+That's the resume update. I'm not really sure why I wrote this other than because I thought it would be nice to keep track of my thought process while (re)designing my resume. Hope you found it interesting. My personal template that I edited for this project can be found at my [Github](http://www.github.com/thisisshi).
