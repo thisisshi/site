@@ -4,7 +4,7 @@ title:  "Building a Modern Apple Extended Keyboard"
 date:   2015-07-22 19:00:44
 categories: keyboards
 ---
-![AEK60](http://i.imgur.com/7IEtL3z.jpg){: .u-max-full-width header-image }
+<img src="http://i.imgur.com/7IEtL3z.jpg" class="u-max-full-width header-image">
 
 Last summer I saw a Vintage Apple Extended Keyboard II and instantly fell in love with the keycaps that were on it. Weird, I know. Korean keyboard enthusiast Sprit [posted some pictures](https://geekhack.org/?topic=49930.0) on the popular Mechanical Keyboard forum Geekhack and I immediatly told myself I needed to build one for myself.
 
@@ -24,8 +24,7 @@ For this build, I purchased 200 Matias Quiet Click switches directly from them f
 
 #####Matias Quiet Click Keyswitch Review#####
 
-![Matias Quiet Click Switch Blueprint](http://www.micwil.com/images/gallery/matias_mini_quiet_pro_p3_825x600.jpg){: .u-max-full-width header-image }
-
+<img src="http://www.micwil.com/images/gallery/matias_mini_quiet_pro_p3_825x600.jpg" class="u-max-full-width header-image">
 
 Contrary to popular belief, not all mechanical keyboards are necessarily loud. In fact, when Matias claims that the Quiet Click switches are quiet, they mean it. They're much less loud than Cherry MX Blues and Greens of course, and by my ear, even a lot quieter than Cherry MX Clears or Cherry MX Browns. This made it the perfect option to use as a keyboard to bring and use at work.
 
@@ -64,9 +63,8 @@ To Program the keyboard, you'll need to clone TMK's keyboard firmware repository
 
 And, that's it! Now, check out some beauty shots of the keyboard:
 
-![AEK60](http://i.imgur.com/9eOwwh7.jpg){: .u-max-full-width header-image }
-
-![AEK60](http://i.imgur.com/U8ExaaZ.jpg){: .u-max-full-width header-image }
+<img src="http://i.imgur.com/9eOwwh7.jpg" class="u-max-full-width header-image">
+<img src="http://i.imgur.com/U8ExaaZ.jpg" class="u-max-full-width header-image">
 
 Thanks for reading!
 
