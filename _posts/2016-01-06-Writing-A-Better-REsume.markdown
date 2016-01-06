@@ -5,7 +5,7 @@ date: 2016-01-06 9:00:00
 categories: resume
 ---
 
-![Resume](http://i.imgur.com/zP12eCL.png)
+<img src="http://i.imgur.com/zP12eCL.png" class="u-max-full-width header-image">
 
 # A Better Resume
 
@@ -47,7 +47,7 @@ One important tip- remember how I said a recruiter only looks at your resume for
 
 ### Random Annoyances I have with some "Modern" Designs ###
 
-![Bad Resume](http://i.imgur.com/IlwG6gI.jpg)
+<img src="http://i.imgur.com/IlwG6gI.jpg" class="u-max-full-width header-image">
 
 This thing has over 1.5k Likes on Behance right now.
 
@@ -61,7 +61,7 @@ Finally, a lot of these resumes seem to forget who the audience is. You're targe
 
 ### Redesigning My Personal Resume ###
 
-![Comparison](http://i.imgur.com/dDn28iJ.jpg)
+<img src="http://i.imgur.com/dDn28iJ.jpg" class="u-max-full-width header-image">
 
  As mentioned earlier, I've always thought my resume was pretty great. It was beautiful, it was functional, and I've gotten complements from it. What's not to love? 
  
@@ -73,7 +73,7 @@ Now, not everything is nicer with LaTeX. For one, it's harder to design by dragg
 
 The first thing I did after I decided to use LaTeX was to see if there were any templates already available for resumes. Sure enough, there was. [Awesome-CV](https://github.com/posquit0/Awesome-CV) caught my attention. It's incredibly maintainable. The resume/CV is divided up into sections which are separated into different `.tex` files-- awesome. This way, your education, experience, other projects, skills, publications, and honors are all easily maintanable. With my old `.indd` file, I would have to edit a block of text, hope that it wouldn't over lap with another text box (it always did) and then rearrange the text to fix whatever I broke by adding text in the first place. For instance, the dates on the left hand side in the the work history, other projects, and education history are not at all connected to their respective sections. Instead, after I finished editing the body of the section I would have to go back and manually edit the dates to match them up with their respective sections. With LaTeX, since the formatting is handled through automatic typesetting, all I have to worry about is the actual content of the resume.
 
-![Old Resume](http://i.imgur.com/HiftsI0.jpg)
+<img src="http://i.imgur.com/HiftsI0.jpg" class="u-max-full-width header-image">
 
 The previous motif of bolding the first word of a section was one of the main points of the resume. It brought the document together thematically and was also useful in helping people determine what section of the document they were in. In my new design, I've decided to ditch that; instead going for a more traditional resume style. Like I said at the start, if your recruiter has 10-15 seconds to read a resume, I dont want them to spend an extra 1 or 2 seconds on figuring out how to read it instead of focusing on the content. In doing so, I've also decided to go away from the completely Swiss look of my previous resume. Yes, the design was very utilitarian and modern, but if I'm going to be going back to a more traditional look, the typeface should follow. I've chosen Abril Fat Face as a serif accent font. For the copy, it's a mixture of Roboto (Google's default sans serif font), and Source Sans Pro. Both Roboto and Source Sans Pro are included in Awesome-CV by default and I found no reason to change them. They work well with each other, don't clash with Abril Fat Face, and above all are both open source, a movement I am definitely a fan of.
 
@@ -83,6 +83,6 @@ Structurally, the new design is basically a 90 degree rotation of the previous d
 
 My favorite part of the resume, however, is probably the Languages & Skills portion. Previously, that section was kind of a mess. I listed a lot of different languages, frameworks, and tools in one fell swoop and it was probably terrible to try and parse. Awesome-CV has you covered on that front. You're able to list skills in an easy to read manner and are categorized nicely. Since it is organized horizontally as opposed to verticlaly as I had done before, I was able to better catagorize my marketable skills into Languages, Frameworks, Databse, Markup, Design, and Other.
 
-![New Resume](http://i.imgur.com/dZp9Y0p.png)
+<img src="http://i.imgur.com/dZp9Y0p.png" class="u-max-full-width header-image">
 
 That's the resume update. I'm not really sure why I wrote this other than because I thought it would be nice to keep track of my thought process while (re)designing my resume. Hope you found it interesting. My personal template that I edited for this project can be found at my [Github](www.github.com/thisisshi).
