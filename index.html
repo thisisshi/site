@@ -3,7 +3,7 @@ layout: home
 ---
 
 <div class="content">
-  <div class="intro cyan darken-3">
+  <div class="intro cyan darken-3 z-depth-2">
     <div class="container">
       <h1 class="grey-text text-lighten-5" style="text-align: left">Hi, My Name is Sonny and I'm a</h1>
       <h4 class="grey-text">
@@ -12,7 +12,7 @@ layout: home
           <div>Designer</div>
           <div>Musician</div>
           <div>Mechanical Keyboard Enthusiast</div>
-          <div>Photographer</div>
+          <div class="red darken-1" style="padding:2px 10px">Buckeye</div>
         </div>
       </h4>
     </div>
@@ -25,7 +25,7 @@ layout: home
     <div class="row">
       <div class="col s12 m6 l6">
         <h6>What I'm Working On Now</h6>
-        <div class="card">
+        <div class="card hoverable">
           <div class="card-content" style="text-align: left">
             <p>Right now I'm working on an open source task management application, <a href="http://www.github.com/thisisshi/clas.si">clas.si</a>. It's a project made from years of frustration with the lack of a task management application that really had students in mind. </p>
             <br />
@@ -35,7 +35,7 @@ layout: home
       </div>
       <div class="col s12 m6 l6">
         <h6>Me</h6>
-        <div class="card">
+        <div class="card hoverable">
           <div class="card-content">
             <img src="https://avatars0.githubusercontent.com/u/4026535?v=3&s=460" class="circle" width="64" height="64">
             <p>Come check out my GitHub, or connect with me on LinkedIn.</p>
@@ -50,46 +50,49 @@ layout: home
     <hr />
     <div class="row">
       <h5>Education and Work Experience</h5>
-      <div class="card grey darken-1">
-        <div class="card-content">
-          <span class="card-title grey-text text-lighten-4"><h5>The Ohio State University</h5></span>
-          <p class="grey-text text-lighten-4">Graduated May 2016 with a Bachelor's in Computer Science and Engineering</p>
-        </div>
-      </div>
-      <br />
-      <div class="card">
-        <div class="card-content">
+      <div class="card hoverable">
+        <div class="card-content edu-work">
           <span class="card-title">Capital One</span>
-          <p>Software Engineer, starting in July 2016</p>
+          <h6>Software Engineer</h6>
+          <p>July 2016</p>
         </div>
       </div>
       <br />
-      <div class="card">
-        <div class="card-content">
+      <div class="card hoverable">
+        <div class="card-content edu-work">
           <span class="card-title">White Castle</span>
-          <p>Software Developer Intern from October 2015 to April 2016</p>
+          <h6>Software Developer Intern</h6>
+          <p>October 2015 to April 2016</p>
         </div>
       </div>
       <br />
-      <div class="card">
-        <div class="card-content">
+      <div class="card hoverable">
+        <div class="card-content edu-work">
           <span class="card-title">Hewlett Packard</span>
-          <p>Software Developer Intern from April 2014 to July 2015</p>
+          <h6>Software Developer Intern</h6>
+          <p>April 2014 to July 2015</p>
         </div>
       </div>
       <br />
-      <div class="card">
-        <div class="card-content">
+      <div class="card hoverable">
+        <div class="card-content edu-work">
           <span class="card-title">Summer At The Edge / Year At The Edge</span>
-          <p>Research intern from July 2013 to December 2013</p>
+          <h6>Research Intern</h6>
+          <p>July 2013 to December 2013</p>
         </div>
       </div>
     </div>
-    <hr />
+    <div class="card hoverable grey lighten-2">
+      <div class="card-content">
+        <span class="card-title black-text text-lighten-4"><h5>The Ohio State University</h5></span>
+        Graduated May 2016 with a Bachelor's in Computer Science and Engineering
+      </div>
+    </div>
+    <br />
     <h5>Projects I've worked On</h5>
     <div class="row">
       <div class="col s12 m4 l4">
-        <div class="card" style="text-align:left">
+        <div class="card hoverable" style="text-align:left">
             <div class="card-content">
               <span class="card-title"><a href="https://www.github.com/thisisshi/clas.si">clas.si</a></span>
               <p>The free, convenient, and powerful way to organize your student life.</p>
@@ -100,7 +103,7 @@ layout: home
         </div>
       </div>
       <div class="col s12 m4 l4">
-        <div class="card" style="text-align:left">
+        <div class="card hoverable" style="text-align:left">
             <div class="card-content">
               <span class="card-title"><a href="https://www.github.com/thisisshi/whatshappening">What's Happening?</a></span>
               <p>What’s Happening is the best way to stay informed about family friendly events occurring in Columbus, Ohio. Each week a list of events tailored to your interests will be texted to your mobile device. These events will provide opportunities to interact with your community, meet new people, have fun and, most importantly, spend time with your family and friends.</p>
@@ -108,7 +111,7 @@ layout: home
         </div>
       </div>
       <div class="col s12 m4 l4">
-        <div class="card" style="text-align:left">
+        <div class="card hoverable" style="text-align:left">
             <div class="card-content">
               <span class="card-title"><a href="https://www.github.com/arianekrumel/kabashd">Kabash'd</a></span>
                <p>Ka-bash’d is a natural language, game creation framework with valuable applications in training and learning. Games created in Ka-bash’d allow players to use their own words to control game play. IBM Watson, specifically the Watson Engagement Advisor (WEA), interprets user input as in-game commands. IBM Watson is also available in the traditional question answering context via a gametime companion that provides related data on request. Ka-bash’d includes an extensible API that allows easy creation of game scenarios that each provide unique skill-building opportunities to players.</p>
@@ -120,7 +123,7 @@ layout: home
     <h5>Skills</h5>
     <div class="row">
       <div class="col s12 m4 l4">
-        <ul class="collection with-header z-depth-1">
+        <ul class="collection with-header z-depth-1 hoverable">
           <li class="collection-header"><h4>Software Languages</h4></li>
           <li class="collection-item">Node.JS</li>
           <li class="collection-item">Ruby on Rails</li>
@@ -129,7 +132,7 @@ layout: home
         </ul>
       </div>
       <div class="col s12 m4 l4">
-        <ul class="collection with-header z-depth-1">
+        <ul class="collection with-header z-depth-1 hoverable">
           <li class="collection-header"><h4>Design</h4></li>
           <li class="collection-item">Adobe Photoshop</li>
           <li class="collection-item">Adobe InDesign</li>
@@ -138,7 +141,7 @@ layout: home
         </ul>
       </div>
       <div class="col s12 m4 l4">
-        <ul class="collection with-header z-depth-1">
+        <ul class="collection with-header z-depth-1 hoverable">
           <li class="collection-header"><h4>Databases</h4></li>
           <li class="collection-item">MS SQL</li>
           <li class="collection-item">MySQL</li>

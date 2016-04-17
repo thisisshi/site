@@ -27,6 +27,8 @@ body, html
 }
 
 
+
+
 .about .col
 {
     margin-bottom: 24px;
@@ -44,6 +46,15 @@ body, html
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 45px;
+}
+
+.card-content h6{
+  margin-bottom:10px;
+}
+
+.edu-work p{
+  font-style: italic;
+  font-size: 0.9em;
 }
 
 .about hr
