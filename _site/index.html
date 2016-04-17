@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
   <head>
 
   <!-- Basic Page Needs
@@ -9,7 +8,7 @@
   <title>Sonny Shi</title>
   <meta name="description" content="">
   <meta name="author" content="">
-  
+
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,8 +19,14 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+ <link rel="stylesheet" href="/css/normalize.css">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -30,56 +35,123 @@
 </head>
 
   <body>
-  <div class = "container">
-    <div class = "row">
-          <div class="three columns sidebar" id="sidebar">
-        <a class = "home-link" href="/index.html"><h2>sonny</h2></a>
-        <h6>the blog</h6>
-        <p>Current Student at The Ohio State University, graduating Spring of 2016.</p>
+    <nav>
+  <div class="nav-fixed">
+    <div class="container">
+      <a href="/index.html" class="brand-logo">sonny</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/content/resume.pdf">Résumé</a></li>
+        <li><a href = "http://www.github.com/thisisshi">Github</a></li>
+        <li><a href = "mailto:theli@outlook.com">Contact Me</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-        <a class = "button button-primary" href="/content/resume.pdf">Resume</a>
-        <a class = "button button-primary" href = "http://www.github.com/thisisshi">Github</a>
-        <a class = "button button-primary" href = "mailto:theli@outlook.com">Contact Me</a>
+
+    <div class="content">
+  <div class="intro red lighten-2 z-depth-1">
+        <h1 class="grey-text text-lighten-5">sonny shi</h1>
+        <h5 clas="grey lighten-4 grey-text text-darken-1">software engineer</h5>
+  </div>
+
+  <div class="container about">
+    <h5>about me</h5>
+    <h6>I'm a software engineer, mechanical keyboards nerd, photographer, designer, and lover of trap music.</h6>
+    <hr />
+    <div class="row">
+      <div class="col s12 m6 l6">
+        <h6>What I'm Working On Now</h6>
+        <div class="card">
+          <div class="card-content" style="text-align: left">
+            <p>Right now I'm working on an open source task management application, <a href="http://www.github.com/thisisshi/clas.si">clas.si</a>. It's a project made from years of frustration with the lack of a task management application that really had students in mind. </p>
+            <br />
+            <p>It's written in Meteor, with support for creating study groups, messaging, and obviously, task management. Go give it a shot and let me know what you think. You can submit a pull request or email me anytime <a href="mailto:theli@outlook.com>">here</a>.</p>
+          </div>
+        </div>
       </div>
-
-    <div class="nine columns content">
-        <div class="content">
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Jul 22, 2015</span>
-
-        <h3>
-          <a class="docs-header" href="/keyboards/2015/07/22/building-a-modern-apple-extended-keyboard.html">Building a Modern Apple Extended Keyboard</a>
-        </h3>
-      </li>
-    
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+      <div class="col s12 m6 l6">
+        <h6>Me</h6>
+        <div class="card">
+          <div class="card-content">
+            <img src="https://avatars0.githubusercontent.com/u/4026535?v=3&s=460" class="circle" width="64" height="64">
+            <p>Come check out my GitHub, or add me on LinkedIn.</p>
+          </div>
+          <div class="card-action">
+            <a href="https://www.github.com/thisisshi">GitHub</a>
+            <a href='https://www.linkedin.com/in/sonnyshi'>LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <h5>Education and Work Experience</h5>
+      <div class="card grey darken-1">
+        <div class="card-content">
+          <span class="card-title grey-text text-lighten-4"><h5>The Ohio State University</h5></span>
+          <p class="grey-text text-lighten-4">Graduated May 2016 with a Bachelor's in Computer Science and Engineering</p>
+        </div>
+      </div>
+      <br />
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">Capital One</span>
+          <p>Software Engineer, starting in July 2016</p>
+        </div>
+      </div>
+      <br />
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">White Castle</span>
+          <p>Software Developer Intern from October 2015 to April 2016</p>
+        </div>
+      </div>
+      <br />
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">Hewlett Packard</span>
+          <p>Software Developer Intern from April 2014 to July 2015</p>
+        </div>
+      </div>
+      <br />
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">Summer At The Edge / Year At The Edge</span>
+          <p>Research intern from July 2013 to December 2013</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </div>
 
-    </div>
 
-    </div>
-            <div class = "footer">
-
-          <div class = "row">
-            <div class = "four columns">
-              <h5>Hire me!</h5>
-              <p>I'm interested in web development, particularlly with Ruby on Rails, Sinatra, Bootstrap, and ember.js</p>
-              You can find more of my work on my Github
-            </div>
-            <div class = "eight columns">
-              <h5>About this blog:</h5>
-              This blog is basically a testing ground for different web development frameworks, new and rising technologies, general rambling about topics that interest me. You will likely find a smattering of posts on Mechanical Keyboards, Film, Computer Science topics, and more.
-            </div>
-          </div>
+    <footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">About Me</h5>
+        <p class="grey-text text-lighten-4">I'm a recent graduate from The Ohio State University and currently working as a software engineer. I'm interested in web and mobile technologies specifically with Node.JS and Meteor.</p>
+        <p class="grey-text text-lighten-4"> In my free time you can typically find me keeping up to date with my hobbies such as mechanical keyboard collecting, photography, music production, or playing League of Legends.</p>
       </div>
-
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="https://www.github.com/thisisshi">Github</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://www.behance.net/lishi">Behance</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://www.soundcloud.com/thisisshi">Soundcloud</a></li>
+        </ul>
+      </div>
     </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2016 Sonny Shi
+    </div>
+  </div>
+</footer>
 
   </body>
-
 </html>

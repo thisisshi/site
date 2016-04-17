@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div class="content">
+  <ul class="post-list">
+        {% for post in site.posts limit 4 %}
+        <li><span><h6>{{ post.date | date_to_string }}</h6></span><a href="{{site.baseurl}}{{ post.url }}"><h5>{{ post.title }}</h5></a></li>
+            {{ post.content | strip_html | truncatewords:120}}<br>
+                <a href="{{ post.url }}">Read more...</a><br><br>
+        {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

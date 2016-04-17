@@ -1,20 +1,80 @@
 ---
-layout: default
+layout: home
 ---
 
 <div class="content">
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <div class="intro red lighten-2 z-depth-1">
+        <h1 class="grey-text text-lighten-5">sonny shi</h1>
+        <h5 clas="grey lighten-4 grey-text text-darken-1">software engineer</h5>
+  </div>
 
-        <h3>
-          <a class="docs-header" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <div class="container about">
+    <h5>about me</h5>
+    <h6>I'm a software engineer, mechanical keyboards nerd, photographer, designer, and lover of trap music.</h6>
+    <hr />
+    <div class="row">
+      <div class="col s12 m6 l6">
+        <h6>What I'm Working On Now</h6>
+        <div class="card">
+          <div class="card-content" style="text-align: left">
+            <p>Right now I'm working on an open source task management application, <a href="http://www.github.com/thisisshi/clas.si">clas.si</a>. It's a project made from years of frustration with the lack of a task management application that really had students in mind. </p>
+            <br />
+            <p>It's written in Meteor, with support for creating study groups, messaging, and obviously, task management. Go give it a shot and let me know what you think. You can submit a pull request or email me anytime <a href="mailto:theli@outlook.com>">here</a>.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l6">
+        <h6>Me</h6>
+        <div class="card">
+          <div class="card-content">
+            <img src="https://avatars0.githubusercontent.com/u/4026535?v=3&s=460" class="circle" width="64" height="64">
+            <p>Come check out my GitHub, or add me on LinkedIn.</p>
+          </div>
+          <div class="card-action">
+            <a href="https://www.github.com/thisisshi">GitHub</a>
+            <a href='https://www.linkedin.com/in/sonnyshi'>LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <h5>Education and Work Experience</h5>
+      <div class="card grey darken-1">
+        <div class="card-content">
+          <span class="card-title grey-text text-lighten-4"><h5>The Ohio State University</h5></span>
+          <p class="grey-text text-lighten-4">Graduated May 2016 with a Bachelor's in Computer Science and Engineering</p>
+        </div>
+      </div>
+      <br />
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">Capital One</span>
+          <p>Software Engineer, starting in July 2016</p>
+        </div>
+      </div>
+      <br />
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">White Castle</span>
+          <p>Software Developer Intern from October 2015 to April 2016</p>
+        </div>
+      </div>
+      <br />
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">Hewlett Packard</span>
+          <p>Software Developer Intern from April 2014 to July 2015</p>
+        </div>
+      </div>
+      <br />
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">Summer At The Edge / Year At The Edge</span>
+          <p>Research intern from July 2013 to December 2013</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </div>

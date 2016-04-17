@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Sonny Shi</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+ <link rel="stylesheet" href="/css/normalize.css">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+</head>
+
+  <body>
+    <nav>
+  <div class="nav-fixed">
+    <div class="container">
+      <a href="/index.html" class="brand-logo">sonny</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/content/resume.pdf">Résumé</a></li>
+        <li><a href = "http://www.github.com/thisisshi">Github</a></li>
+        <li><a href = "mailto:theli@outlook.com">Contact Me</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="container">
+      <div class="post">
+
+  <header class="post-header">
+    <h3 class="post-title">Dev Blog: Building the Angular Frequency Analyzer</h3>
+    <p class="post-meta">Sep 4, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <p>Out of all the classes that I&#39;m taking right now in my penultimate (!!) semester at OSU, the most interesting one is probably <em>Linguistics 3801: Codes and Code Breaking</em>. Not only was I pretty enthralled with the 2014 Academy Award Winning Film <em>The Imitation Game</em>, I&#39;ve always been at least generally interested in codes and code breaking, mostly from a <em>&quot;Hm, that&#39;s pretty cool, I woudn&#39;t have thought to do it that way&quot;</em> sort of way.</p>
+
+<p>To assist with breaking some of the ciphers in the class and in an effort to <em>finally</em> start learning AngularJS, I decided that I would build a tool to help assist me with some of this code breaking. Currently, the name of the application is called theh &quot;Angular Frequency Analyzer&quot; which will no doubt change as the class progresses and I realize that I need to use additional tools other than frequency analysis. </p>
+
+<p>The first cipher we encountered was the Caesar shift, which while incredibly easy to crack, my application (in its current form) doesn&#39;t quite support yet. </p>
+
+<p><em>Note: It is indeed possible to crack a ceasear shift with frequency analysis, but the amount of work involved in doing so would be a lot less efficient than even hand writing out each shift</em></p>
+
+<p>This application is best suited for cracking general monoalphabetic ciphers by hand with the applicationi assisting in some of the grunt work of counting all the instances of each letter and turning them into more user friendly percentages. Included in the application is a table of the frequency of English letters from <a href="http://www.math.cornell.edu/~mec/2003-2004/cryptography/subs/frequencies.html">the Math Explorers Club of Cornell University</a>.</p>
+
+<h2>Buliding the Application</h2>
+
+<p>Previously, I had basically no experience in AngularJS other than the brief tutorial (that I&#39;m pretty sure I didn&#39;t even finish) from their website. AngularJS is yet another MVC Javascript framework, this time coming from Google.</p>
+
+<p>What I knew that I wanted from the application was at least:</p>
+
+<ol>
+<li>The ability to dynamically analyze encrypted text in terms of character frequency</li>
+<li>To display the results in a graphically pleasing manner</li>
+</ol>
+
+<p>To satisfy the first one, I just had to do some string manipulation and analysis. A call to the function `` takes in the current input that the user has provided and begins to calculate the frequency of each character in the string. At first, I approached this by writing a huge switch case statement which technically would do the trick but at the cost of having a huge block of code that could be more efficently written.</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">$scope</span><span class="p">.</span><span class="nx">cryptInput</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">switch</span><span class="p">(</span><span class="nx">$scope</span><span class="p">.</span><span class="nx">cryptInput</span><span class="p">[</span><span class="nx">i</span><span class="p">]){</span>
+                    <span class="k">case</span> <span class="s2">"a"</span><span class="err">:</span>
+                    <span class="nx">$scope</span><span class="p">.</span><span class="nx">hash</span><span class="p">.</span><span class="nx">a</span> <span class="o">=</span> <span class="nx">$scope</span><span class="p">.</span><span class="nx">hash</span><span class="p">.</span><span class="nx">a</span> <span class="o">+</span> <span class="mi">1</span>
+                    <span class="k">break</span><span class="p">;</span>
+                    <span class="k">case</span> <span class="s2">"b"</span><span class="err">:</span>
+                    <span class="nx">$scope</span><span class="p">.</span><span class="nx">hash</span><span class="p">.</span><span class="nx">b</span> <span class="o">=</span> <span class="nx">$scope</span><span class="p">.</span><span class="nx">hash</span><span class="p">.</span><span class="nx">b</span> <span class="o">+</span> <span class="mi">1</span>
+                    <span class="k">break</span><span class="p">;</span>
+                    <span class="k">case</span> <span class="s2">"c"</span><span class="err">:</span>
+                    <span class="nx">$scope</span><span class="p">.</span><span class="nx">hash</span><span class="p">.</span><span class="nx">c</span> <span class="o">=</span> <span class="nx">$scope</span><span class="p">.</span><span class="nx">hash</span><span class="p">.</span><span class="nx">c</span> <span class="o">+</span> <span class="mi">1</span>
+                    <span class="k">break</span><span class="p">;</span>
+                    <span class="k">case</span> <span class="s2">"d"</span><span class="err">:</span>   
+                    <span class="nx">$scope</span><span class="p">.</span><span class="nx">hash</span><span class="p">.</span><span class="nx">d</span> <span class="o">=</span> <span class="nx">$scope</span><span class="p">.</span><span class="nx">hash</span><span class="p">.</span><span class="nx">d</span> <span class="o">+</span> <span class="mi">1</span>
+                    <span class="k">break</span><span class="p">;</span>
+                    <span class="k">case</span> <span class="s2">"e"</span><span class="err">:</span>
+                    <span class="nx">$scope</span><span class="p">.</span><span class="nx">hash</span><span class="p">.</span><span class="nx">e</span> <span class="o">=</span> <span class="nx">$scope</span><span class="p">.</span><span class="nx">hash</span><span class="p">.</span><span class="nx">e</span> <span class="o">+</span> <span class="mi">1</span>
+                    <span class="k">break</span><span class="p">;</span>
+                    <span class="k">case</span> <span class="s2">"f"</span><span class="err">:</span>
+                    <span class="nx">$scope</span><span class="p">.</span><span class="nx">hash</span><span class="p">.</span><span class="nx">f</span> <span class="o">=</span> <span class="nx">$scope</span><span class="p">.</span><span class="nx">hash</span><span class="p">.</span><span class="nx">f</span> <span class="o">+</span> <span class="mi">1</span>
+                    <span class="k">break</span><span class="p">;</span>
+                    <span class="k">case</span> <span class="s2">"g"</span><span class="err">:</span>
+                    <span class="nx">$scope</span><span class="p">.</span><span class="nx">hash</span><span class="p">.</span><span class="nx">g</span> <span class="o">=</span> <span class="nx">$scope</span><span class="p">.</span><span class="nx">hash</span><span class="p">.</span><span class="nx">g</span> <span class="o">+</span> <span class="mi">1</span>
+                    <span class="k">break</span><span class="p">;</span>
+                    <span class="k">case</span> <span class="s2">"h"</span><span class="err">:</span>
+                    <span class="nx">$scope</span><span class="p">.</span><span class="nx">hash</span><span class="p">.</span><span class="nx">h</span> <span class="o">=</span> <span class="nx">$scope</span><span class="p">.</span><span class="nx">hash</span><span class="p">.</span><span class="nx">h</span> <span class="o">+</span> <span class="mi">1</span>
+                    <span class="k">break</span><span class="p">;</span>
+                    <span class="k">case</span> <span class="s2">"i"</span><span class="err">:</span>
+                    <span class="nx">$scope</span><span class="p">.</span><span class="nx">hash</span><span class="p">.</span><span class="nx">i</span> <span class="o">=</span> <span class="nx">$scope</span><span class="p">.</span><span class="nx">hash</span><span class="p">.</span><span class="nx">i</span> <span class="o">+</span> <span class="mi">1</span>
+                    <span class="k">break</span><span class="p">;</span>
+                    <span class="k">case</span> <span class="s2">"j"</span><span class="err">:</span>
+                    <span class="nx">$scope</span><span class="p">.</span><span class="nx">hash</span><span class="p">.</span><span class="nx">j</span> <span class="o">=</span> <span class="nx">$scope</span><span class="p">.</span><span class="nx">hash</span><span class="p">.</span><span class="nx">j</span> <span class="o">+</span> <span class="mi">1</span>
+                    <span class="k">break</span><span class="p">;</span>
+                    <span class="p">...</span>
+</code></pre></div>
+<p>Yuck. And that&#39;s just the for loop. Instead, apparently you can do this magical thing in Javascript to access properties in objects through strings like so: <code>$scope.hash[cryptInput[i]]</code> where hash is an object with a property that has the name stored in variable <code>cryptInput[i]</code>.</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">    <span class="nx">$scope</span><span class="p">.</span><span class="nx">calcInstances</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+        <span class="nx">$scope</span><span class="p">.</span><span class="nx">cryptInput</span> <span class="o">=</span> <span class="nx">angular</span><span class="p">.</span><span class="nx">uppercase</span><span class="p">(</span><span class="nx">$scope</span><span class="p">.</span><span class="nx">cryptInput</span><span class="p">);</span>
+        <span class="nx">$scope</span><span class="p">.</span><span class="nx">hash</span> <span class="o">=</span> <span class="nx">angular</span><span class="p">.</span><span class="nx">copy</span><span class="p">(</span><span class="nx">$scope</span><span class="p">.</span><span class="nx">hashmaster</span><span class="p">);</span>
+        <span class="nx">$scope</span><span class="p">.</span><span class="nx">percent</span> <span class="o">=</span> <span class="nx">angular</span><span class="p">.</span><span class="nx">copy</span><span class="p">(</span><span class="nx">$scope</span><span class="p">.</span><span class="nx">hashmaster</span><span class="p">);</span>
+        <span class="nx">$scope</span><span class="p">.</span><span class="nx">max</span> <span class="o">=</span> <span class="nx">angular</span><span class="p">.</span><span class="nx">copy</span><span class="p">(</span><span class="nx">$scope</span><span class="p">.</span><span class="nx">maxmaster</span><span class="p">)</span>
+        <span class="c1">// Gets the Instances of each character</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">$scope</span><span class="p">.</span><span class="nx">cryptInput</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">$scope</span><span class="p">.</span><span class="nx">hash</span><span class="p">[</span><span class="nx">$scope</span><span class="p">.</span><span class="nx">cryptInput</span><span class="p">[</span><span class="nx">i</span><span class="p">]]</span><span class="o">++</span><span class="p">;</span>
+            <span class="nx">$scope</span><span class="p">.</span><span class="nx">percent</span><span class="p">[</span><span class="nx">$scope</span><span class="p">.</span><span class="nx">cryptInput</span><span class="p">[</span><span class="nx">i</span><span class="p">]]</span> <span class="o">=</span>  <span class="p">(</span><span class="nx">$scope</span><span class="p">.</span><span class="nx">hash</span><span class="p">[</span><span class="nx">$scope</span><span class="p">.</span><span class="nx">cryptInput</span><span class="p">[</span><span class="nx">i</span><span class="p">]]</span> <span class="o">/</span> <span class="nx">$scope</span><span class="p">.</span><span class="nx">cryptInput</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">;</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">$scope</span><span class="p">.</span><span class="nx">max</span><span class="p">.</span><span class="nx">value</span> <span class="o">&lt;</span> <span class="nx">$scope</span><span class="p">.</span><span class="nx">hash</span><span class="p">[</span><span class="nx">$scope</span><span class="p">.</span><span class="nx">cryptInput</span><span class="p">[</span><span class="nx">i</span><span class="p">]]){</span>
+                <span class="nx">$scope</span><span class="p">.</span><span class="nx">max</span><span class="p">.</span><span class="nx">character</span> <span class="o">=</span> <span class="nx">$scope</span><span class="p">.</span><span class="nx">cryptInput</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+                <span class="nx">$scope</span><span class="p">.</span><span class="nx">max</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="nx">$scope</span><span class="p">.</span><span class="nx">hash</span><span class="p">[</span><span class="nx">$scope</span><span class="p">.</span><span class="nx">cryptInput</span><span class="p">[</span><span class="nx">i</span><span class="p">]]</span>
+            <span class="p">}</span>
+        <span class="p">};</span>
+    <span class="p">};</span>
+</code></pre></div>
+<p>Much better. </p>
+
+<p>As you can see, not only am I able to tally up the number of instances of each letter in the encrypted text, I&#39;m also able to determine the character with the most instances <em>and</em> to calculate the percentage frequency of each character in one fell swoop. The rest of the application is mostly front end fiddling with Bootstrap and the use of a very nice table sort javascript library created by tristan which can be seen <a href="https://github.com/tristen/tablesort">here.</a></p>
+
+  </article>
+
+</div>
+
+    </div>
+    
+    <footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">About Me</h5>
+        <p class="grey-text text-lighten-4">I'm a recent graduate from The Ohio State University and currently working as a software engineer. I'm interested in web and mobile technologies specifically with Node.JS and Meteor.</p>
+        <p class="grey-text text-lighten-4"> In my free time you can typically find me keeping up to date with my hobbies such as mechanical keyboard collecting, photography, music production, or playing League of Legends.</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="https://www.github.com/thisisshi">Github</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://www.behance.net/lishi">Behance</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://www.soundcloud.com/thisisshi">Soundcloud</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2016 Sonny Shi
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>

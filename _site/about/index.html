@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
   <head>
 
   <!-- Basic Page Needs
@@ -9,7 +8,7 @@
   <title>Sonny Shi</title>
   <meta name="description" content="">
   <meta name="author" content="">
-  
+
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,8 +19,14 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+ <link rel="stylesheet" href="/css/normalize.css">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -30,23 +35,26 @@
 </head>
 
   <body>
-  <div class = "container">
-    <div class = "row">
-          <div class="three columns sidebar" id="sidebar">
-        <a class = "home-link" href="/index.html"><h2>sonny</h2></a>
-        <h6>the blog</h6>
-        <p>Current Student at The Ohio State University, graduating Spring of 2016.</p>
+    <nav>
+  <div class="nav-fixed">
+    <div class="container">
+      <a href="/index.html" class="brand-logo">sonny</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/content/resume.pdf">Résumé</a></li>
+        <li><a href = "http://www.github.com/thisisshi">Github</a></li>
+        <li><a href = "mailto:theli@outlook.com">Contact Me</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-        <a class = "button button-primary" href="/content/resume.pdf">Resume</a>
-        <a class = "button button-primary" href = "http://www.github.com/thisisshi">Github</a>
-        <a class = "button button-primary" href = "mailto:theli@outlook.com">Contact Me</a>
-      </div>
 
-    <div class="nine columns content">
-        <div class="post">
+    <div class="container">
+      <div class="post">
 
   <header class="post-header">
-    <h3 class="post-title">About</h3>
+    <h5 class="post-title">About</h5>
   </header>
 
   <article class="post-content">
@@ -61,25 +69,31 @@
 </div>
 
     </div>
-
-    </div>
-            <div class = "footer">
-
-          <div class = "row">
-            <div class = "four columns">
-              <h5>Hire me!</h5>
-              <p>I'm interested in web development, particularly with Ruby on Rails, Sinatra, Bootstrap, and ember.js</p>
-              You can find more of my work on my Github
-            </div>
-            <div class = "eight columns">
-              <h5>About this blog:</h5>
-              This blog is basically a testing ground for different web development frameworks, new and rising technologies, general rambling about topics that interest me. You will likely find a smattering of posts on Mechanical Keyboards, Film, Computer Science topics, and more.
-            </div>
-          </div>
+    
+    <footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">About Me</h5>
+        <p class="grey-text text-lighten-4">I'm a recent graduate from The Ohio State University and currently working as a software engineer. I'm interested in web and mobile technologies specifically with Node.JS and Meteor.</p>
+        <p class="grey-text text-lighten-4"> In my free time you can typically find me keeping up to date with my hobbies such as mechanical keyboard collecting, photography, music production, or playing League of Legends.</p>
       </div>
-
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="https://www.github.com/thisisshi">Github</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://www.behance.net/lishi">Behance</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://www.soundcloud.com/thisisshi">Soundcloud</a></li>
+        </ul>
+      </div>
     </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2016 Sonny Shi
+    </div>
+  </div>
+</footer>
 
   </body>
-
 </html>
