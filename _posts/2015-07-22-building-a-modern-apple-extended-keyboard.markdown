@@ -10,19 +10,19 @@ Last summer I saw a Vintage Apple Extended Keyboard II and instantly fell in lov
 
 That was essentially the start of what I would consider my now "hardcore" keyboard hobby. I had previously seen and heard of mechanical keyboards before -- in fact, the very first keyboard I had ever typed on was a Silicon Graphics AT101, with cream dampened ALPS switches. I could tell at the time that the keyboard felt much, much better than the alternative rubber dome keyboard that was included with my family's new computer but I didn't know why... at the time. All I knew was that even after my dad had moved the old keyboard out and plugged in the new one, I instantly disliked the typing experience.
 
-#####A Brief History of Mechanical Keyboards and the AEKII#####
+##### A Brief History of Mechanical Keyboards and the AEKII #####
 
 Now, while I had never actually typed on an AEKII (Apple Extended Keyboard II) before, many models of the AEKII used the same keyswitches as that old SGI board that I had loved growing up. Sadly, after computers got much more popular (we're talking early 90's) manufacturers decided that it was far too costly to include these beautifully crafted and engineered things called "Mechanical Keyboards". Nowadays, keyboards are typically made by using some sort of circuit sheet or PCB, attaching a rubber sheet over top, and finally putting keycaps on top of that in some housing. Traditional mechanical keyboards used individual keyswitches, similar to the ones found in things like guitar pedals and car doors, to receive input from the user. Obviously, building a keyswitch for each key on a typical 108 key keyboard is costly. Furthermore, most computer users aren't as invested in using high quality input devices.
 
 The first Apple Extended Keyboard II shipped in 1990 with the Macintosh II and SE. Needless to say, the keyboard is a part of computing history. Apple manufactured a variety of models of the keyboard with all sorts of various switches. The important fact though, is that these switches were all of the ALPS stem variety. ALPS, a Japanese electronics company, produced its ALPS switches from as early as 1983. Sadly, it no longer produces keyboard switches as the market has become more and more niche.
 
-#####Enter Matias#####
+##### Enter Matias #####
 
 Matias, an American company that mainly produces Apple Macintosh accessories was well invested in creating mechanical keyboards for Apple/Mac users. Once ALPS decided to stop the production of its keyswitches, the Matias company took it open itself to begin producing keyswitches of its own, now known as the Matias Quiet Click, Matias Click, and Matias Linear switches.
 
 For this build, I purchased 200 Matias Quiet Click switches directly from them for $60 shipped. This would be more than enough to build at least three 60% alps board if I wanted.
 
-#####Matias Quiet Click Keyswitch Review#####
+##### Matias Quiet Click Keyswitch Review #####
 
 <img src="http://www.micwil.com/images/gallery/matias_mini_quiet_pro_p3_825x600.jpg" class="responsive-img">
 
@@ -45,11 +45,11 @@ Source: [Deskthority](http://www.deskthority.net)
 
 Now, while on paper the Matias Quiet Click seem to be a much heavier switch than even a Cherry MX Clear, that has not been my experience in day to day use.
 
-#####The PCB and Plate#####
+##### The PCB and Plate #####
 
 Originally, I had planned on handwiring the board together, using diodes and spare wire to connect each switch individually. thankfully, Hasu on geekhack started a group buy for his Alps64 PCB which I immediatly jumped on. As that was going into production and people were placing their orders, geekhacker nubbinator also set up a group buy for a stainless steel AEKII plate which I also joined as well.
 
-#####Putting it all together#####
+##### Putting it all together #####
 
 To finally assemble everything, all I had to do was solder the through-hole diodes that Hasu included, and install the switches on the plate and solder those in. All in all, the total time that was required was probably around a few hours. Now, it was time for the fun part.
 

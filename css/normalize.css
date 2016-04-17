@@ -725,7 +725,7 @@ footer
 	100% { opacity: 0; }
 }
 /*Footer*/
-h3{
+.page-footer h3{
 	color: #fff;
 	font-size: 30px;
 	margin-top: 20px;

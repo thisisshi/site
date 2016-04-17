@@ -35,7 +35,7 @@
 </head>
 
   <body>
-    <nav class='nav-fixed cyan darken-2 z-depth-3'>
+    <nav class='nav-fixed cyan darken-2 z-depth-1'>
   <div>
     <div class="container">
       <a href="/index.html" class="brand-logo"><i class="material-icons">change_history</i></a>
@@ -51,66 +51,65 @@
 
 
     <div class="container">
-      <div class="post">
+      <div class="post card z-depth-3">
+  <div class="container" style="padding:20px">
+    <header class="post-header">
+      <h3 class="post-title" style="color:#000">Preparing for Coding Interviews - Part I</h3>
+      <p class="post-meta">Jul 23, 2015</p>
+    </header>
+    <article class="post-content">
+      <p>Fact: I’ve never done an honest to God, real life, 100% legit coding interview. At least, I don’t think I have. I’ve had the excellent (or perhaps not so excellent) ability to somehow not have to do a particularly hard technical interview… ever. So, with graduation coming in <em>less than a year</em>, I’ve decided to brush up on some concepts that I may or may not have forgotten.</p>
 
-  <header class="post-header">
-    <h3 class="post-title">Preparing for Coding Interviews - Part I</h3>
-    <p class="post-meta">Jul 23, 2015</p>
-  </header>
+<p>Since teaching a subject is a great indicator that you yourself have learned the information, I’ve decided to devote at least some of my blog posts to working through the great books that are <em>Programming Interviews Exposed</em> and <em>Cracking the Coding Interview</em>.</p>
 
-  <article class="post-content">
-    <p>Fact: I&#39;ve never done an honest to God, real life, 100% legit coding interview. At least, I don&#39;t think I have. I&#39;ve had the excellent (or perhaps not so excellent) ability to somehow not have to do a particularly hard technical interview... ever. So, with graduation coming in <em>less than a year</em>, I&#39;ve decided to brush up on some concepts that I may or may not have forgotten.</p>
+<h5 id="part-i-linked-lists">Part I: Linked Lists</h5>
 
-<p>Since teaching a subject is a great indicator that you yourself have learned the information, I&#39;ve decided to devote at least some of my blog posts to working through the great books that are <em>Programming Interviews Exposed</em> and <em>Cracking the Coding Interview</em>.</p>
+<p>Now, although I don’t <em>plan</em> on becoming a C programmer, it doesn’t hurt to keep options open. One of the easiest ways to determine if someone has a real understanding of pointers in C is to ask them to describe and implement a linked list.</p>
 
-<h5>Part I: Linked Lists</h5>
+<p>For those that are unfamiliar, a linked list is basically a very nice data structure that you can sort of envision as a train. On a train there are various cars, and on those cars they carry certain things – cargo, coal, people, etc. However, to successfully understand the train’s structure, all you need to know is what each car is connected to in a singular direction. The car at the front is connected to nothing (null), and each subsequent car is connected to the one that is infront of it. Now, if you were unaware of how the train looked, if you were given a description of what each car was connected to, you could easily arrange them in the correct order.</p>
 
-<p>Now, although I don&#39;t <em>plan</em> on becoming a C programmer, it doesn&#39;t hurt to keep options open. One of the easiest ways to determine if someone has a real understanding of pointers in C is to ask them to describe and implement a linked list.</p>
-
-<p>For those that are unfamiliar, a linked list is basically a very nice data structure that you can sort of envision as a train. On a train there are various cars, and on those cars they carry certain things -- cargo, coal, people, etc. However, to successfully understand the train&#39;s structure, all you need to know is what each car is connected to in a singular direction. The car at the front is connected to nothing (null), and each subsequent car is connected to the one that is infront of it. Now, if you were unaware of how the train looked, if you were given a description of what each car was connected to, you could easily arrange them in the correct order.</p>
-
-<p>Now, what does this model imply? First, it implies that each car carries some sort of object, or data. Secondly, it implies that each car knows what car it&#39;s connected to from the front. That&#39;s the pointer. In C, we use structs to describe the node in a linked list. Thus we have the following:</p>
+<p>Now, what does this model imply? First, it implies that each car carries some sort of object, or data. Secondly, it implies that each car knows what car it’s connected to from the front. That’s the pointer. In C, we use structs to describe the node in a linked list. Thus we have the following:</p>
 
 <figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="k">typedef</span> <span class="k">struct</span> <span class="n">node</span><span class="p">(){</span>
-        <span class="k">struct</span> <span class="n">node</span> <span class="o">*</span><span class="n">next</span><span class="p">;</span>
-        <span class="kt">int</span> <span class="n">data</span><span class="p">;</span>
+	 	<span class="k">struct</span> <span class="n">node</span> <span class="o">*</span><span class="n">next</span><span class="p">;</span>
+	 	<span class="kt">int</span> <span class="n">data</span><span class="p">;</span>
 <span class="p">}</span> <span class="n">node</span><span class="p">;</span></code></pre></figure>
 
 <p>Here, we have our pointer, *next, pointing to the next node in our list. Then, we have our data which will be stored in the node.</p>
 
-<p>This is what&#39;s called a Singly-Linked list. Obviously, the first improvement we can make to this is to not only store which node is in front of it, but also which node is previous to it. The main advantage to this approach is that it takes an inconsequential amount of memory to store the pointer to the previous node and also decreases the amount of time to search for the previous node significantly. Imagine if given a node you were asked to search for the node that came before it in a Singly-Linked List. How would you do it? </p>
+<p>This is what’s called a Singly-Linked list. Obviously, the first improvement we can make to this is to not only store which node is in front of it, but also which node is previous to it. The main advantage to this approach is that it takes an inconsequential amount of memory to store the pointer to the previous node and also decreases the amount of time to search for the previous node significantly. Imagine if given a node you were asked to search for the node that came before it in a Singly-Linked List. How would you do it?</p>
 
-<p>The answer is: <a href="http://stackoverflow.com/questions/7198508/given-a-node-how-can-i-find-previous-node-in-a-singly-linked-list">you can&#39;t</a>. At least, not in a way that would be nearly as efficient as just creating a Doubly-Linked list. Of course, you could try and navigate the heap and look for a node object and check to see if the <code>*next</code> pointer was equal to whatever your current memory location but let&#39;s face it, that&#39;s not an ideal solution.</p>
+<p>The answer is: <a href="http://stackoverflow.com/questions/7198508/given-a-node-how-can-i-find-previous-node-in-a-singly-linked-list">you can’t</a>. At least, not in a way that would be nearly as efficient as just creating a Doubly-Linked list. Of course, you could try and navigate the heap and look for a node object and check to see if the <code class="highlighter-rouge">*next</code> pointer was equal to whatever your current memory location but let’s face it, that’s not an ideal solution.</p>
 
 <p>As mentioned previously, a Doubly-Linked List is merely a Singly-Linked List with informaion about its predecessor. To accomplish this, we modify the struct to the following:</p>
 
 <figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="k">typedef</span> <span class="k">struct</span> <span class="n">node</span><span class="p">(){</span>
-    <span class="k">struct</span> <span class="n">node</span> <span class="o">*</span><span class="n">next</span><span class="p">;</span>
-    <span class="k">struct</span> <span class="n">node</span> <span class="o">*</span><span class="n">prev</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">data</span><span class="p">;</span>
+	<span class="k">struct</span> <span class="n">node</span> <span class="o">*</span><span class="n">next</span><span class="p">;</span>
+	<span class="k">struct</span> <span class="n">node</span> <span class="o">*</span><span class="n">prev</span><span class="p">;</span>
+	<span class="kt">int</span> <span class="n">data</span><span class="p">;</span>
 <span class="p">}</span><span class="n">node</span><span class="p">;</span></code></pre></figure>
 
-<p>Now, we have both a pointer to the node that&#39;s in front and to the node that is previous to it. At this point we should ask ourselves, how do we <em>use</em> these newly created nodes? First, let&#39;s think about what exactly these nodes are supposed to do. They&#39;re supposed to tell us what&#39;s in front of it and what came before it. If we&#39;re going to instantiate a new Linked List, we should consider what exactly should go into the first element.</p>
+<p>Now, we have both a pointer to the node that’s in front and to the node that is previous to it. At this point we should ask ourselves, how do we <em>use</em> these newly created nodes? First, let’s think about what exactly these nodes are supposed to do. They’re supposed to tell us what’s in front of it and what came before it. If we’re going to instantiate a new Linked List, we should consider what exactly should go into the first element.</p>
 
-<p>If this element is the first element that is created, can it have a previous node? Can it have a successor node? Of course not. Again, imagine if you began constructing a train. The first car that you use will not be connected to anything. In the same vein, the first node will not have a <code>*next</code> or a <code>*prev</code> pointer. Instead, to indicate that this is the first item in the list, we will set <code>*next</code> to <code>NULL</code> and to indicate that this is the last item in the list, we will set <code>*prev</code> to <code>NULL</code>. Since the first car is both the first and the last part of the list, both will be null.</p>
+<p>If this element is the first element that is created, can it have a previous node? Can it have a successor node? Of course not. Again, imagine if you began constructing a train. The first car that you use will not be connected to anything. In the same vein, the first node will not have a <code class="highlighter-rouge">*next</code> or a <code class="highlighter-rouge">*prev</code> pointer. Instead, to indicate that this is the first item in the list, we will set <code class="highlighter-rouge">*next</code> to <code class="highlighter-rouge">NULL</code> and to indicate that this is the last item in the list, we will set <code class="highlighter-rouge">*prev</code> to <code class="highlighter-rouge">NULL</code>. Since the first car is both the first and the last part of the list, both will be null.</p>
 
 <figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">bool</span> <span class="n">insertInFront</span><span class="p">(</span><span class="n">node</span>  <span class="o">**</span><span class="n">head</span><span class="p">,</span> <span class="kt">int</span> <span class="n">data</span><span class="p">){</span>
-    <span class="n">node</span> <span class="o">*</span><span class="n">newNode</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="n">sizeOf</span><span class="p">(</span><span class="n">node</span><span class="p">));</span>
-    <span class="n">If</span><span class="p">(</span><span class="o">!</span><span class="n">newNode</span><span class="p">){</span><span class="k">return</span> <span class="nb">false</span><span class="p">;}</span>
-    <span class="n">newNode</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">;</span>
-    <span class="n">newNode</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="o">*</span><span class="n">head</span><span class="p">;</span>
-    <span class="o">*</span><span class="n">head</span> <span class="o">=</span> <span class="n">newNode</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+	<span class="n">node</span> <span class="o">*</span><span class="n">newNode</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="n">sizeOf</span><span class="p">(</span><span class="n">node</span><span class="p">));</span>
+	<span class="n">If</span><span class="p">(</span><span class="o">!</span><span class="n">newNode</span><span class="p">){</span><span class="k">return</span> <span class="nb">false</span><span class="p">;}</span>
+	<span class="n">newNode</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">;</span>
+	<span class="n">newNode</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="o">*</span><span class="n">head</span><span class="p">;</span>
+	<span class="o">*</span><span class="n">head</span> <span class="o">=</span> <span class="n">newNode</span><span class="p">;</span>
+	<span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
 <span class="p">}</span></code></pre></figure>
 
-<p>Let&#39;s go line by line. In the first line of the function, we&#39;re allocating memory for the new node by using the method <code>malloc</code> and geting the size through <code>sizeOf</code>. Next, we should check whether or not the memory was allocated correctly by checking the existence of <code>newNode</code>. Finally, we being setting the values of the node. Firstly, the data is set. This shouldn&#39;t require much additional explanation. The next line however, is a bit tricky. Many people are tempted to write the pointer as <code>newNode-&gt;next = head</code>. After all, the head variable is given to you. However, if you were to write that, the next pointer wouldn&#39;t be pointing at a location in memory at all. Instead, it would be pointing at the local head variable. Now, again, the next line could also cause people to write <code>head = newNode</code>. Instead, what should be done is <code>*head = newNode</code>. Now, we&#39;re correctly setting the pointer for head to the newNode we just created. Finally, we return true when the function completes successfully.</p>
+<p>Let’s go line by line. In the first line of the function, we’re allocating memory for the new node by using the method <code class="highlighter-rouge">malloc</code> and geting the size through <code class="highlighter-rouge">sizeOf</code>. Next, we should check whether or not the memory was allocated correctly by checking the existence of <code class="highlighter-rouge">newNode</code>. Finally, we being setting the values of the node. Firstly, the data is set. This shouldn’t require much additional explanation. The next line however, is a bit tricky. Many people are tempted to write the pointer as <code class="highlighter-rouge">newNode-&gt;next = head</code>. After all, the head variable is given to you. However, if you were to write that, the next pointer wouldn’t be pointing at a location in memory at all. Instead, it would be pointing at the local head variable. Now, again, the next line could also cause people to write <code class="highlighter-rouge">head = newNode</code>. Instead, what should be done is <code class="highlighter-rouge">*head = newNode</code>. Now, we’re correctly setting the pointer for head to the newNode we just created. Finally, we return true when the function completes successfully.</p>
 
-<p>Now, to insert a new node, we must take into consideration the same questions as before. Where is the next node in the list? Does the next node even exist? What about the previous node? </p>
+<p>Now, to insert a new node, we must take into consideration the same questions as before. Where is the next node in the list? Does the next node even exist? What about the previous node?</p>
 
 <p>To Be Continued.</p>
 
-  </article>
-
+    </article>
+  </div>
 </div>
 
     </div>

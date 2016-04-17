@@ -9,7 +9,7 @@ Fact: I've never done an honest to God, real life, 100% legit coding interview. 
 
 Since teaching a subject is a great indicator that you yourself have learned the information, I've decided to devote at least some of my blog posts to working through the great books that are _Programming Interviews Exposed_ and _Cracking the Coding Interview_.
 
-#####Part I: Linked Lists#####
+##### Part I: Linked Lists #####
 
 Now, although I don't _plan_ on becoming a C programmer, it doesn't hurt to keep options open. One of the easiest ways to determine if someone has a real understanding of pointers in C is to ask them to describe and implement a linked list.
 
@@ -26,7 +26,7 @@ typedef struct node(){
 
 Here, we have our pointer, *next, pointing to the next node in our list. Then, we have our data which will be stored in the node.
 
-This is what's called a Singly-Linked list. Obviously, the first improvement we can make to this is to not only store which node is in front of it, but also which node is previous to it. The main advantage to this approach is that it takes an inconsequential amount of memory to store the pointer to the previous node and also decreases the amount of time to search for the previous node significantly. Imagine if given a node you were asked to search for the node that came before it in a Singly-Linked List. How would you do it? 
+This is what's called a Singly-Linked list. Obviously, the first improvement we can make to this is to not only store which node is in front of it, but also which node is previous to it. The main advantage to this approach is that it takes an inconsequential amount of memory to store the pointer to the previous node and also decreases the amount of time to search for the previous node significantly. Imagine if given a node you were asked to search for the node that came before it in a Singly-Linked List. How would you do it?
 
 The answer is: [you can't](http://stackoverflow.com/questions/7198508/given-a-node-how-can-i-find-previous-node-in-a-singly-linked-list). At least, not in a way that would be nearly as efficient as just creating a Doubly-Linked list. Of course, you could try and navigate the heap and look for a node object and check to see if the `*next` pointer was equal to whatever your current memory location but let's face it, that's not an ideal solution.
 
@@ -57,6 +57,6 @@ bool insertInFront(node  **head, int data){
 
 Let's go line by line. In the first line of the function, we're allocating memory for the new node by using the method `malloc` and geting the size through `sizeOf`. Next, we should check whether or not the memory was allocated correctly by checking the existence of `newNode`. Finally, we being setting the values of the node. Firstly, the data is set. This shouldn't require much additional explanation. The next line however, is a bit tricky. Many people are tempted to write the pointer as `newNode->next = head`. After all, the head variable is given to you. However, if you were to write that, the next pointer wouldn't be pointing at a location in memory at all. Instead, it would be pointing at the local head variable. Now, again, the next line could also cause people to write `head = newNode`. Instead, what should be done is `*head = newNode`. Now, we're correctly setting the pointer for head to the newNode we just created. Finally, we return true when the function completes successfully.
 
-Now, to insert a new node, we must take into consideration the same questions as before. Where is the next node in the list? Does the next node even exist? What about the previous node? 
+Now, to insert a new node, we must take into consideration the same questions as before. Where is the next node in the list? Does the next node even exist? What about the previous node?
 
 To Be Continued.

@@ -7,8 +7,6 @@ categories: resume
 
 <img src="http://i.imgur.com/zP12eCL.png" class="responsive-img">
 
-# A Better Resume
-
 I've taken pride in the fact that my resume didn't look like that of most engineers that I knew. _Mine_ was cool. _Mine_ was modern. _Mine_ was sleek. But above all, I took pride in the fact that I thought it followed the tenants of good typographic design. In fact, I often used my resume as a jumping off point to talk about my love of the print medium, typographic design, and how I think about designing for the web, desktop, or mobile.
 
 It wasn't until a few weeks ago when I took a hard look at my old resume that I decided I wasn't designing for the user. I was designing for myself.
@@ -21,7 +19,7 @@ In the case of job hunting, the buyer is the recruiter.
 
 After a (successful) job hunt season, I've learned a lot. Most of the stuff I'll be talking about will probably seem obvious, but it's often the most obvious things that pass our attention.
 
-### Typographic Structure ###
+#### Typographic Structure ####
 
 Design is often seen as a necessary evil in a lot of computer science circles. That's why many of your favorite professors' web pages are just plain old html files with inline styling, no fancy Javascript, and no extra "flair". However, I would be bold enough to say that their websites are probably better designed than yours. While your website might be built on the newest front end framework with support with beautiful transitions using Javascript, the fact of the matter is this: The professor's website can guide your eyes down the website as quickly and efficiently as possible, and you'll find the important information faster than on your beautiful website.
 
@@ -37,14 +35,15 @@ Remember, by the time you finish reading this sentence and the next, whatever HR
 
 It's your job to guide them down your resume. The way you present yourself on a single sheet of paper has the power to get your foot in the door. If the recruiter can't see anything but a pretty piece of paper with no substance, your resume is going in the "No" pile.
 
-### Typefaces ###
+#### Typefaces ####
 
 On top of properly structuring your resume, make sure you also use an appropriate typeface. Please don't use Comic Sans and expect a call back. Look into your collection of typefaces on your computer and pick one that's boring. Really, really boring. Now, go from that and go up a notch if you want to give it some extra "punch". That doesn't mean pick Times New Roman and then go on and pick Papyrus. We're talking about going from Times New Roman to Garamond. Something subtly different that will set you apart without making it look like you came into the interview wearing a bright pink suit.
 
 There are a lot of resources on the web about how to properly combine typefaces in such a way to make your document more typographically interesting. One of the most important is this: Whatever combination of typefaces you choose, make sure the end result is harmonious. Don't pick a combination that distracts-- one that makes the reader ask: "Why the hell did they pick these two fonts?". Pick a combination that, using their differences, elevates both at the same time. For the most part though, if in doubt as to what you should use, make the safer bet and go with a single font. Yes, it will look more boring, but boring is better than terrible.
 
 One important tip- remember how I said a recruiter only looks at your resume for 10 to 15 seconds at a time? If your typeface is too thin or too unreadable, it's gonna be even shorter than that. If you're a student, you're likely at a job fair or expo where there are hundreds of people jammed into one big room and it isn't gonna be very quiet. Quiet means concentration. Quiet means they're able to read easily. If the typeface you choose is too thin, it's just an extra level of difficulty for the recruiter and like it or not, it's not gonna make you stand out as a better candidate. Do I wish it wasn't like this and recruiters would spend a good 5 minutes per application? Of course, but that's unrealistic. Given the constraints, it's your job to make the best of it.
-### Random Annoyances I have with some "Modern" Designs ###
+
+#### Random Annoyances I have with some "Modern" Designs ####
 
 <img src="http://i.imgur.com/IlwG6gI.jpg" class="responsive-img">
 
@@ -58,7 +57,7 @@ A lot of these resumes also feature a ton of color. This is fine, if you're able
 
 Finally, a lot of these resumes seem to forget who the audience is. You're targeting HR departments and recruiters, not graphic designers. I mean, your resume might end up in the hands of a graphic designer at some point, but it's probably going through HR first. That's the first hurdle you have to get through. Putting your experience in a timeline that's hard to read and not very useful isn't going to wow HR. It's going to make you a joke at the water cooler.
 
-### Redesigning My Personal Resume ###
+#### Redesigning My Personal Resume ####
 
 <img src="http://i.imgur.com/dDn28iJ.jpg" class="responsive-img">
 
