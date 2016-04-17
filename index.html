@@ -3,12 +3,22 @@ layout: home
 ---
 
 <div class="content">
-  <div class="intro red lighten-2 z-depth-1">
-        <h1 class="grey-text text-lighten-5">sonny shi</h1>
-        <h5 clas="grey lighten-4 grey-text text-darken-1">software engineer</h5>
+  <div class="intro cyan darken-3">
+    <div class="container">
+      <h1 class="grey-text text-lighten-5" style="text-align: left">Hi, My Name is Sonny and I'm a</h1>
+      <h4 class="grey-text">
+        <div class="slidingVertical">
+          <div class="is-visible">Software Engineer</div>
+          <div>Designer</div>
+          <div>Musician</div>
+          <div>Mechanical Keyboard Enthusiast</div>
+          <div>Photographer</div>
+        </div>
+      </h4>
+    </div>
   </div>
 
-  <div class="container about">
+  <div class="container about z-depth-3" style="padding:50px">
     <h5>about me</h5>
     <h6>I'm a software engineer, mechanical keyboards nerd, photographer, designer, and lover of trap music.</h6>
     <hr />
@@ -28,7 +38,7 @@ layout: home
         <div class="card">
           <div class="card-content">
             <img src="https://avatars0.githubusercontent.com/u/4026535?v=3&s=460" class="circle" width="64" height="64">
-            <p>Come check out my GitHub, or add me on LinkedIn.</p>
+            <p>Come check out my GitHub, or connect with me on LinkedIn.</p>
           </div>
           <div class="card-action">
             <a href="https://www.github.com/thisisshi">GitHub</a>
@@ -75,6 +85,103 @@ layout: home
         </div>
       </div>
     </div>
+    <hr />
+    <h5>Projects I've worked On</h5>
+    <div class="row">
+      <div class="col s12 m4 l4">
+        <div class="card" style="text-align:left">
+            <div class="card-content">
+              <span class="card-title"><a href="https://www.github.com/thisisshi/clas.si">clas.si</a></span>
+              <p>The free, convenient, and powerful way to organize your student life.</p>
+              <p>No more emails, Facebook Messages, GroupMe invites, Trello boards, or Wunderlists. Everything you need in one spot. </p>
+              <p>clas.si includes easy adding of tasks and classes as well as built in sharing of classes in study groups.</p>
+              <p>clas.si is open source and built with open source technologies like Meteor and Node.js</p>
+            </div>
+        </div>
+      </div>
+      <div class="col s12 m4 l4">
+        <div class="card" style="text-align:left">
+            <div class="card-content">
+              <span class="card-title"><a href="https://www.github.com/thisisshi/whatshappening">What's Happening?</a></span>
+              <p>What’s Happening is the best way to stay informed about family friendly events occurring in Columbus, Ohio. Each week a list of events tailored to your interests will be texted to your mobile device. These events will provide opportunities to interact with your community, meet new people, have fun and, most importantly, spend time with your family and friends.</p>
+            </div>
+        </div>
+      </div>
+      <div class="col s12 m4 l4">
+        <div class="card" style="text-align:left">
+            <div class="card-content">
+              <span class="card-title"><a href="https://www.github.com/arianekrumel/kabashd">Kabash'd</a></span>
+               <p>Ka-bash’d is a natural language, game creation framework with valuable applications in training and learning. Games created in Ka-bash’d allow players to use their own words to control game play. IBM Watson, specifically the Watson Engagement Advisor (WEA), interprets user input as in-game commands. IBM Watson is also available in the traditional question answering context via a gametime companion that provides related data on request. Ka-bash’d includes an extensible API that allows easy creation of game scenarios that each provide unique skill-building opportunities to players.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <h5>Skills</h5>
+    <div class="row">
+      <div class="col s12 m4 l4">
+        <ul class="collection with-header z-depth-1">
+          <li class="collection-header"><h4>Software Languages</h4></li>
+          <li class="collection-item">Node.JS</li>
+          <li class="collection-item">Ruby on Rails</li>
+          <li class="collection-item">Java</li>
+          <li class="collection-item">.NET</li>
+        </ul>
+      </div>
+      <div class="col s12 m4 l4">
+        <ul class="collection with-header z-depth-1">
+          <li class="collection-header"><h4>Design</h4></li>
+          <li class="collection-item">Adobe Photoshop</li>
+          <li class="collection-item">Adobe InDesign</li>
+          <li class="collection-item">Adobe Illustrator</li>
+          <li class="collection-item">Respnosive Web Design</li>
+        </ul>
+      </div>
+      <div class="col s12 m4 l4">
+        <ul class="collection with-header z-depth-1">
+          <li class="collection-header"><h4>Databases</h4></li>
+          <li class="collection-item">MS SQL</li>
+          <li class="collection-item">MySQL</li>
+          <li class="collection-item">PostgreSQL</li>
+          <li class="collection-item">MongoDB</li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <h6>Made with <i class="fa fa-heart pulse"></i> in Columbus, OH </h6>
   </div>
+  <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large red" href="mailto:theli@outlook.com">
+      <i class="large material-icons">email</i>
+    </a>
+  </div>
+  <script>
+    var animationDelay = 2500;
 
+    animateHeadline($('.cd-headline'));
+
+    function animateHeadline($headlines) {
+    	$headlines.each(function(){
+    		var headline = $(this);
+    		//trigger animation
+    		setTimeout(function(){ hideWord( headline.find('.is-visible') ) }, animationDelay);
+    		//other checks here ...
+    	});
+    }
+
+    function hideWord($word) {
+    	var nextWord = takeNext($word);
+    	switchWord($word, nextWord);
+    	setTimeout(function(){ hideWord(nextWord) }, animationDelay);
+    }
+
+    function takeNext($word) {
+    	return (!$word.is(':last-child')) ? $word.next() : $word.parent().children().eq(0);
+    }
+
+    function switchWord($oldWord, $newWord) {
+    	$oldWord.removeClass('is-visible').addClass('is-hidden');
+    	$newWord.removeClass('is-hidden').addClass('is-visible');
+    }
+  </script>
 </div>
