@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Your awesome title</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</description>
+    <link>localhost/</link>
+    <atom:link href="localhost/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>2016-04-17 00:55:32 -0400</pubDate>
+    <lastBuildDate>2016-04-17 00:55:32 -0400</lastBuildDate>
+    <generator>Jekyll v</generator>
+    
+      <item>
+        <title>Building a Better Resume</title>
+        <description>&lt;img class='responsive-img' src='http://i.imgur.com/zP12eCL.png' /&gt;
+&lt;p&gt;I&amp;#8217;ve taken pride in the fact that my resume didn&amp;#8217;t look like that of most engineers that I knew. &lt;em&gt;Mine&lt;/em&gt; was cool. &lt;em&gt;Mine&lt;/em&gt; was modern. &lt;em&gt;Mine&lt;/em&gt; was sleek. But above all, I took pride in the fact that I thought it followed the tenants of good typographic design. In fact, I often used my resume as a jumping off point to talk about my love of the print medium, typographic design, and how I think about designing for the web, desktop, or mobile.&lt;/p&gt;
+
+&lt;p&gt;It wasn&amp;#8217;t until a few weeks ago when I took a hard look at my old resume that I decided I wasn&amp;#8217;t designing for the user. I was designing for myself.&lt;/p&gt;
+
+&lt;p&gt;This happens often with resume designs. I see impracticality everywhere&amp;#8211; many &amp;#8220;modern&amp;#8221; or &amp;#8220;design-centered&amp;#8221; resumes I&amp;#8217;ve seen constantly forget the target audience: recruiters. Let&amp;#8217;s do a thought experiment.&lt;/p&gt;
+
+&lt;p&gt;Imagine you&amp;#8217;re designing some new product, say a microwave. Now, you&amp;#8217;re a software developer so you might think, &amp;#8220;Let&amp;#8217;s make sure it microwaves food correctly but&amp;#8230;&amp;#8221; and that&amp;#8217;s where you start to think of all sorts of cool stuff you could include in this new microwave. Then, you get sucked into thinking &amp;#8220;What if we had a nice API that can integrate with Slack?&amp;#8221; or &amp;#8220;What if we could programmatically change the lighting to match the music coming from your Sonos Play system?&amp;#8221; These are nice, but they aren&amp;#8217;t what the target audience or user is looking for. Microwave buyers buy microwaves to do one thing: microwave things for a set period of time. Oh, there&amp;#8217;s a popcorn button that roughly sets the timer to the amount of time I need to microwave a bag of popcorn? Awesome, that&amp;#8217;s icing on the cake. But, if it doesn&amp;#8217;t do the singular job of making stuff &lt;em&gt;hot&lt;/em&gt;, you&amp;#8217;ve completely lost the buyer.&lt;/p&gt;
+
+&lt;p&gt;In the case of job hunting, the buyer is the recruiter.&lt;/p&gt;
+
+&lt;p&gt;After a (successful) job hunt season, I&amp;#8217;ve learned a lot. Most of the stuff I&amp;#8217;ll be talking about will probably seem obvious, but it&amp;#8217;s often the most obvious things that pass our attention.&lt;/p&gt;
+
+&lt;h4 id='typographic_structure'&gt;Typographic Structure&lt;/h4&gt;
+
+&lt;p&gt;Design is often seen as a necessary evil in a lot of computer science circles. That&amp;#8217;s why many of your favorite professors&amp;#8217; web pages are just plain old HTML files with inline styling, no fancy Javascript, and no extra &amp;#8220;flair&amp;#8221;. However, I would be bold enough to say that their websites are probably better designed than yours. While your website might be built on the newest front end framework with support with beautiful transitions using Javascript, the fact of the matter is this: The professor&amp;#8217;s website can guide your eyes down the website as quickly and efficiently as possible, and you&amp;#8217;ll find the important information faster than on your beautiful website.&lt;/p&gt;
+
+&lt;p&gt;Why is this? You&amp;#8217;ve spent a day or two perfecting your own personal showcase of your works and your professor just dropped a few &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; tags, some &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tags and that&amp;#8217;s it.&lt;/p&gt;
+
+&lt;p&gt;The reason why their websites are more readable is because they (at least subconsciously) understand structure. You do too, but often times, new shiny tools or frameworks get in the way of that.&lt;/p&gt;
+
+&lt;p&gt;When you read a book, you know when the book starts because the chapter with larger letters and often separates it from the rest of the opening paragraph. The separation allows your pre-conditioned brain to immediately recognize &lt;em&gt;&amp;#8220;this is where I need to start reading&amp;#8221;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Similarly, with a resume, you&amp;#8217;ll want to emphasize section headers with larger print and some sort of separation between the header and your body text. Additionally, make sure that you&amp;#8217;re making the individual elements in your sections separate from each other by having subheaders that are large and distinct as to not distract the reader.&lt;/p&gt;
+
+&lt;p&gt;Remember, by the time you finish reading this sentence and the next, whatever HR representative that is going over your resume will be done. They typically spend 10-15 seconds giving your resume a glance-over, looking for certain buzzwords and information that they deem important. &lt;em&gt;That&lt;/em&gt; is why it&amp;#8217;s so important to properly design your resume in a way that&amp;#8217;s readable. If you&amp;#8217;ve got a lot of extra niceties on your resume, the recruiter probably won&amp;#8217;t notice. If they do, it doesn&amp;#8217;t matter, they&amp;#8217;re already looking at the next resume.&lt;/p&gt;
+
+&lt;p&gt;It&amp;#8217;s your job to guide them down your resume. The way you present yourself on a single sheet of paper has the power to get your foot in the door. If the recruiter can&amp;#8217;t see anything but a pretty piece of paper with no substance, your resume is going in the &amp;#8220;No&amp;#8221; pile.&lt;/p&gt;
+
+&lt;h4 id='typefaces'&gt;Typefaces&lt;/h4&gt;
+
+&lt;p&gt;On top of properly structuring your resume, make sure you also use an appropriate typeface. Please don&amp;#8217;t use Comic Sans and expect a call back. Look into your collection of typefaces on your computer and pick one that&amp;#8217;s boring. Really, really boring. Now, go from that and go up a notch if you want to give it some extra &amp;#8220;punch&amp;#8221;. That doesn&amp;#8217;t mean pick Times New Roman and then go on and pick Papyrus. We&amp;#8217;re talking about going from Times New Roman to Garamond. Something subtly different that will set you apart without making it look like you came into the interview wearing a bright pink suit.&lt;/p&gt;
+
+&lt;p&gt;There are a lot of resources on the web about how to properly combine typefaces in such a way to make your document more typographically interesting. One of the most important is this: Whatever combination of typefaces you choose, make sure the end result is harmonious. Don&amp;#8217;t pick a combination that distracts&amp;#8211; one that makes the reader ask: &amp;#8220;Why the hell did they pick these two fonts?&amp;#8221;. Pick a combination that, using their differences, elevates both at the same time. For the most part though, if in doubt as to what you should use, make the safer bet and go with a single font. Yes, it will look more boring, but boring is better than terrible.&lt;/p&gt;
+
+&lt;p&gt;One important tip- remember how I said a recruiter only looks at your resume for 10 to 15 seconds at a time? If your typeface is too thin or too unreadable, it&amp;#8217;s gonna be even shorter than that. If you&amp;#8217;re a student, you&amp;#8217;re likely at a job fair or expo where there are hundreds of people jammed into one big room and it isn&amp;#8217;t gonna be very quiet. Quiet means concentration. Quiet means they&amp;#8217;re able to read easily. If the typeface you choose is too thin, it&amp;#8217;s just an extra level of difficulty for the recruiter and like it or not, it&amp;#8217;s not gonna make you stand out as a better candidate. Do I wish it wasn&amp;#8217;t like this and recruiters would spend a good 5 minutes per application? Of course, but that&amp;#8217;s unrealistic. Given the constraints, it&amp;#8217;s your job to make the best of it.&lt;/p&gt;
+
+&lt;h4 id='random_annoyances_i_have_with_some_modern_designs'&gt;Random Annoyances I have with some &amp;#8220;Modern&amp;#8221; Designs&lt;/h4&gt;
+&lt;img class='responsive-img' src='http://i.imgur.com/IlwG6gI.jpg' /&gt;
+&lt;p&gt;This thing has over 1.5k Likes on Behance right now.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#8217;ve done a lot of Googling to find an ideal resume template just so I won&amp;#8217;t have to make one of my own and time and time again, I see that none of them really match what I want. A lot of them have a weird chart with supposed &amp;#8220;mastery&amp;#8221; of skills in percentages. Every time I see one of them I wonder to myself, &amp;#8220;What use is it to have you judge your own mastery?&amp;#8221; It&amp;#8217;s already been shown that engineers are &lt;em&gt;really&lt;/em&gt; bad at judging their interview experience. What makes you think that people are any better at judging their own knowledge of certain topics? Often times, the most knowledgeable people I know are those that admit the least about their skill or competency. They&amp;#8217;re willing to admit that they don&amp;#8217;t know everything and because of that, they&amp;#8217;re able to constantly learn and get better.&lt;/p&gt;
+
+&lt;p&gt;Another big &amp;#8220;No-No&amp;#8221; is the inclusion of a picture in the resume. According to US Labor laws, employers aren&amp;#8217;t allowed to discriminate based on race, age, sex, and a whole bunch of other categories. If you&amp;#8217;re including a picture, you&amp;#8217;re putting a bit &amp;#8220;DON&amp;#8217;T TALK TO ME&amp;#8221; sign on your back. Employers don&amp;#8217;t want to deal with you because what could happen is a huge lawsuit if they get further down the process and choose not to hire you.&lt;/p&gt;
+
+&lt;p&gt;A lot of these resumes also feature a ton of color. This is fine, if you&amp;#8217;re able to make sure that 1) You&amp;#8217;re always able to present the resume in color, as intended or 2) It looks fine in black and white. Every time I&amp;#8217;ve sat down in a job interview, the interviewer had a copy of my resume&amp;#8230; in black and white. I can only imagine how &lt;em&gt;terrible&lt;/em&gt; some of the designs would look that prominently feature low contrast color combinations.&lt;/p&gt;
+
+&lt;p&gt;Finally, a lot of these resumes seem to forget who the audience is. You&amp;#8217;re targeting HR departments and recruiters, not graphic designers. I mean, your resume might end up in the hands of a graphic designer at some point, but it&amp;#8217;s probably going through HR first. That&amp;#8217;s the first hurdle you have to get through. Putting your experience in a timeline that&amp;#8217;s hard to read and not very useful isn&amp;#8217;t going to wow HR. It&amp;#8217;s going to make you a joke at the water cooler.&lt;/p&gt;
+
+&lt;h4 id='redesigning_my_personal_resume'&gt;Redesigning My Personal Resume&lt;/h4&gt;
+&lt;img class='responsive-img' src='http://i.imgur.com/dDn28iJ.jpg' /&gt;
+&lt;p&gt;As mentioned earlier, I&amp;#8217;ve always thought my resume was pretty great. It was beautiful, it was functional, and I&amp;#8217;ve gotten complements from it. What&amp;#8217;s not to love?&lt;/p&gt;
+
+&lt;p&gt;I originally designed the document in Adobe InDesign and while it&amp;#8217;s by far one of the best pieces of software for print design, it&amp;#8217;s &lt;em&gt;not&lt;/em&gt; great for something like a resume for a college student that takes internships every summer and has new projects to add and has stuff to update every 6 months. That&amp;#8217;s why I decided to rewrite my resume in LaTeX (Pronounced Lah-Tech).&lt;/p&gt;
+
+&lt;p&gt;For those that are unaware of LaTeX, you&amp;#8217;ve probably encountered it at some point in your life. If you&amp;#8217;ve ever wondered why all the math assignments from your Calculus class all look similar from class to class, and how they&amp;#8217;re able to put in equations elegantly and neatly into their Word doc, the answer is this: they&amp;#8217;re not using Word.&lt;/p&gt;
+
+&lt;p&gt;Now, not everything is nicer with LaTeX. For one, it&amp;#8217;s harder to design by dragging and dropping mostly because dragging and dropping doesn&amp;#8217;t exist in LaTeX. Instead, everything is done using the markup language. The benefit of this is if you&amp;#8217;re comfortable with LaTeX already, you can easily write a resume by using the knowledge you already know. The downside of this is it has a somewhat significant learning curve. For most, it&amp;#8217;s not worth it to learn. But, if you&amp;#8217;re willing to Google around a little and learn it, it can be invaluable to you.&lt;/p&gt;
+
+&lt;p&gt;The first thing I did after I decided to use LaTeX was to see if there were any templates already available for resumes. Sure enough, there was. &lt;a href='https://github.com/posquit0/Awesome-CV'&gt;Awesome-CV&lt;/a&gt; caught my attention. It&amp;#8217;s incredibly maintainable. The resume/CV is divided up into sections which are separated into different &lt;code&gt;.tex&lt;/code&gt; files&amp;#8211; awesome. This way, your education, experience, other projects, skills, publications, and honors are all easily maintainable. With my old &lt;code&gt;.indd&lt;/code&gt; file, I would have to edit a block of text, hope that it wouldn&amp;#8217;t over lap with another text box (it always did) and then rearrange the text to fix whatever I broke by adding text in the first place. For instance, the dates on the left hand side in the the work history, other projects, and education history are not at all connected to their respective sections. Instead, after I finished editing the body of the section I would have to go back and manually edit the dates to match them up with their respective sections. With LaTeX, since the formatting is handled through automatic typesetting, all I have to worry about is the actual content of the resume.&lt;/p&gt;
+&lt;img class='responsive-img' src='http://i.imgur.com/HiftsI0.jpg' /&gt;
+&lt;p&gt;The previous motif of bolding the first word of a section was one of the main points of the resume. It brought the document together thematically and was also useful in helping people determine what section of the document they were in. In my new design, I&amp;#8217;ve decided to ditch that; instead going for a more traditional resume style. Like I said at the start, if your recruiter has 10-15 seconds to read a resume, I don’t want them to spend an extra 1 or 2 seconds on figuring out how to read it instead of focusing on the content. In doing so, I&amp;#8217;ve also decided to go away from the completely Swiss look of my previous resume. Yes, the design was very utilitarian and modern, but if I&amp;#8217;m going to be going back to a more traditional look, the typeface should follow. I&amp;#8217;ve chosen Abril Fat Face as a serif accent font. For the copy, it&amp;#8217;s a mixture of Roboto (Google&amp;#8217;s default sans serif font), and Source Sans Pro. Both Roboto and Source Sans Pro are included in Awesome-CV by default and I found no reason to change them. They work well with each other, don&amp;#8217;t clash with Abril Fat Face, and above all are both open source, a movement I am definitely a fan of.&lt;/p&gt;
+
+&lt;p&gt;Another improvement upon my previous resume was the use of a thicker font. Previously, I was using Helvetica Neue throughout the entirety of my resume. I used all different variants of Helvetica Neue, mostly to emphasis certain parts of my resume as well as to add contrast in the document as well. What I realized after printing out my resume however, was that while it looked fine on a 24&amp;#8221; 1080p monitor completely zoomed in while I was working on it; when I printed it out, the text wasn&amp;#8217;t as readable as I would have liked. That&amp;#8217;s something that often comes to my mind when looking at different resume designs on the internet. They might look great on a screen with the zoom at 150% or 200%, but when you&amp;#8217;re reading it in person in a dimly lit room or just in general, the readability changes dramatically. On top of that, while I decided not to include a serif font for my body text, I&amp;#8217;ve added it to add additional contrast for the headers, while keeping the subheaders sans-serif to keep readability high. Since Abril Fat Face is quite thick, using the typeface in small sizes leads to poor readability.&lt;/p&gt;
+
+&lt;p&gt;Structurally, the new design is basically a 90 degree rotation of the previous design. Gone are the vertical lines and the vertically stacked right hand side. As mentioned earlier, I&amp;#8217;ve gone with a more traditional designed resume, which will be easier to read. On top of that benefit however, I&amp;#8217;m also able to fit in significantly more information. Since the vertical stacking of dates is now gone and instead appears in line with the subheadings, I&amp;#8217;m able to describe my experiences in more depth. It does come at the expensive of less white space which can decrease a bit of readability, but in my mind the pros outweigh the cons. On top of that, font size is much easier to manipulate in LaTeX than in Adobe InDesign since there&amp;#8217;s a singular point of control.&lt;/p&gt;
+
+&lt;p&gt;My favorite part of the resume, however, is probably the Languages &amp;amp; Skills portion. Previously, that section was kind of a mess. I listed a lot of different languages, frameworks, and tools in one fell swoop and it was probably terrible to try and parse. Awesome-CV has you covered on that front. You&amp;#8217;re able to list skills in an easy to read manner and are categorized nicely. Since it is organized horizontally as opposed to vertically as I had done before, I was able to better categorize my marketable skills into Languages, Frameworks, Database, Markup, Design, and Other.&lt;/p&gt;
+&lt;img class='responsive-img' src='http://i.imgur.com/dZp9Y0p.png' /&gt;
+&lt;p&gt;That&amp;#8217;s the resume update. I&amp;#8217;m not really sure why I wrote this other than because I thought it would be nice to keep track of my thought process while (re)designing my resume. Hope you found it interesting. My personal template that I edited for this project can be found at my &lt;a href='http://www.github.com/thisisshi'&gt;Github&lt;/a&gt;.&lt;/p&gt;</description>
+        <pubDate>2016-01-06 04:00:00 -0500</pubDate>
+        <link>localhost/resume/2016/01/06/Writing-A-Better-Resume.html</link>
+        <guid isPermaLink="true">localhost/resume/2016/01/06/Writing-A-Better-Resume.html</guid>
+        
+        
+        <category>resume</category>
+        
+      </item>
+    
+      <item>
+        <title>Dev Blog: Building the Angular Frequency Analyzer</title>
+        <description>&lt;p&gt;Out of all the classes that I&amp;#8217;m taking right now in my penultimate (!!) semester at OSU, the most interesting one is probably &lt;em&gt;Linguistics 3801: Codes and Code Breaking&lt;/em&gt;. Not only was I pretty enthralled with the 2014 Academy Award Winning Film &lt;em&gt;The Imitation Game&lt;/em&gt;, I&amp;#8217;ve always been at least generally interested in codes and code breaking, mostly from a &lt;em&gt;&amp;#8220;Hm, that&amp;#8217;s pretty cool, I woudn&amp;#8217;t have thought to do it that way&amp;#8221;&lt;/em&gt; sort of way.&lt;/p&gt;
+
+&lt;p&gt;To assist with breaking some of the ciphers in the class and in an effort to &lt;em&gt;finally&lt;/em&gt; start learning AngularJS, I decided that I would build a tool to help assist me with some of this code breaking. Currently, the name of the application is called the &amp;#8220;Angular Frequency Analyzer&amp;#8221; which will no doubt change as the class progresses and I realize that I need to use additional tools other than frequency analysis.&lt;/p&gt;
+
+&lt;p&gt;The first cipher we encountered was the Caesar shift, which while incredibly easy to crack, my application (in its current form) doesn&amp;#8217;t quite support yet.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Note: It is indeed possible to crack a Caesar shift with frequency analysis, but the amount of work involved in doing so would be a lot less efficient than even hand writing out each shift&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This application is best suited for cracking general monoalphabetic ciphers by hand with the applicationi assisting in some of the grunt work of counting all the instances of each letter and turning them into more user friendly percentages. Included in the application is a table of the frequency of English letters from &lt;a href='http://www.math.cornell.edu/~mec/2003-2004/cryptography/subs/frequencies.html'&gt;the Math Explorers Club of Cornell University&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id='buliding_the_application'&gt;Buliding the Application&lt;/h4&gt;
+
+&lt;p&gt;Previously, I had basically no experience in AngularJS other than the brief tutorial (that I&amp;#8217;m pretty sure I didn&amp;#8217;t even finish) from their website. AngularJS is yet another MVC Javascript framework, this time coming from Google.&lt;/p&gt;
+
+&lt;p&gt;What I knew that I wanted from the application was at least:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The ability to dynamically analyze encrypted text in terms of character frequency&lt;/li&gt;
+
+&lt;li&gt;To display the results in a graphically pleasing manner&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;To satisfy the first one, I just had to do some string manipulation and analysis. A call to the function &lt;code&gt;takes in the current input that the user has provided and begins to calculate the frequency of each character in the string. At first, I approached this by writing a huge switch case statement which technically would do the trick but at the cost of having a huge block of code that could be more efficiently written.&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;javascript
+	for (var i = 0; i &amp;lt; $scope.cryptInput.length; i++) {
+				switch($scope.cryptInput[i]){
+					case &amp;quot;a&amp;quot;:
+					$scope.hash.a = $scope.hash.a + 1
+					break;
+					case &amp;quot;b&amp;quot;:
+					$scope.hash.b = $scope.hash.b + 1
+					break;
+					case &amp;quot;c&amp;quot;:
+					$scope.hash.c = $scope.hash.c + 1
+					break;
+					case &amp;quot;d&amp;quot;:
+					$scope.hash.d = $scope.hash.d + 1
+					break;
+					case &amp;quot;e&amp;quot;:
+					$scope.hash.e = $scope.hash.e + 1
+					break;
+					case &amp;quot;f&amp;quot;:
+					$scope.hash.f = $scope.hash.f + 1
+					break;
+					case &amp;quot;g&amp;quot;:
+					$scope.hash.g = $scope.hash.g + 1
+					break;
+					case &amp;quot;h&amp;quot;:
+					$scope.hash.h = $scope.hash.h + 1
+					break;
+					case &amp;quot;i&amp;quot;:
+					$scope.hash.i = $scope.hash.i + 1
+					break;
+					case &amp;quot;j&amp;quot;:
+					$scope.hash.j = $scope.hash.j + 1
+					break;
+					...
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Yuck. And that&amp;#8217;s just the for loop. Instead, apparently you can do this magical thing in Javascript to access properties in objects through strings like so: &lt;code&gt;$scope.hash[cryptInput[i]]&lt;/code&gt; where hash is an object with a property that has the name stored in variable &lt;code&gt;cryptInput[i]&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;javascript
+	$scope.calcInstances = function(){
+		$scope.cryptInput = angular.uppercase($scope.cryptInput);
+		$scope.hash = angular.copy($scope.hashmaster);
+		$scope.percent = angular.copy($scope.hashmaster);
+		$scope.max = angular.copy($scope.maxmaster)
+		// Gets the Instances of each character
+		for (var i = 0; i &amp;lt; $scope.cryptInput.length; i++) {
+			$scope.hash[$scope.cryptInput[i]]++;
+			$scope.percent[$scope.cryptInput[i]] =  ($scope.hash[$scope.cryptInput[i]] / $scope.cryptInput.length)*100;
+			if ($scope.max.value &amp;lt; $scope.hash[$scope.cryptInput[i]]){
+				$scope.max.character = $scope.cryptInput[i];
+				$scope.max.value = $scope.hash[$scope.cryptInput[i]]
+			}
+		};
+	};
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Much better.&lt;/p&gt;
+
+&lt;p&gt;As you can see, not only am I able to tally up the number of instances of each letter in the encrypted text, I&amp;#8217;m also able to determine the character with the most instances &lt;em&gt;and&lt;/em&gt; to calculate the percentage frequency of each character in one fell swoop. The rest of the application is mostly front end fiddling with Bootstrap and the use of a very nice table sort javascript library created by tristan which can be seen &lt;a href='https://github.com/tristen/tablesort'&gt;here.&lt;/a&gt;&lt;/p&gt;</description>
+        <pubDate>2015-09-04 05:00:00 -0400</pubDate>
+        <link>localhost/angular/2015/09/04/Building-Angular-Frequency-Analyzer..html</link>
+        <guid isPermaLink="true">localhost/angular/2015/09/04/Building-Angular-Frequency-Analyzer..html</guid>
+        
+        
+        <category>angular</category>
+        
+      </item>
+    
+      <item>
+        <title>Preparing for Coding Interviews - Part I</title>
+        <description>&lt;p&gt;Since teaching a subject is a great indicator that you yourself have learned the information, I&amp;#8217;ve decided to devote at least some of my blog posts to working through the great books that are &lt;em&gt;Programming Interviews Exposed&lt;/em&gt; and &lt;em&gt;Cracking the Coding Interview&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h5 id='part_i_linked_lists'&gt;Part I: Linked Lists&lt;/h5&gt;
+
+&lt;p&gt;Now, although I don&amp;#8217;t &lt;em&gt;plan&lt;/em&gt; on becoming a C programmer, it doesn&amp;#8217;t hurt to keep options open. One of the easiest ways to determine if someone has a real understanding of pointers in C is to ask them to describe and implement a linked list.&lt;/p&gt;
+
+&lt;p&gt;For those that are unfamiliar, a linked list is basically a very nice data structure that you can sort of envision as a train. On a train there are various cars, and on those cars they carry certain things &amp;#8211; cargo, coal, people, etc. However, to successfully understand the train&amp;#8217;s structure, all you need to know is what each car is connected to in a singular direction. The car at the front is connected to nothing (null), and each subsequent car is connected to the one that is in front of it. Now, if you were unaware of how the train looked, if you were given a description of what each car was connected to, you could easily arrange them in the correct order.&lt;/p&gt;
+
+&lt;p&gt;Now, what does this model imply? First, it implies that each car carries some sort of object, or data. Secondly, it implies that each car knows what car it&amp;#8217;s connected to from the front. That&amp;#8217;s the pointer. In C, we use structs to describe the node in a linked list. Thus we have the following:&lt;/p&gt;
+&lt;div&gt;
+  &lt;pre&gt;&lt;code class='C'&gt;typedef struct node(){
+	 	struct node *next;
+	 	int data;
+} node;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Here, we have our pointer, &lt;em&gt;next, pointing to the next node in our list. Then, we have our data which will be stored in the node.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This is what&amp;#8217;s called a Singly-Linked list. Obviously, the first improvement we can make to this is to not only store which node is in front of it, but also which node is previous to it. The main advantage to this approach is that it takes an inconsequential amount of memory to store the pointer to the previous node and also decreases the amount of time to search for the previous node significantly. Imagine if given a node you were asked to search for the node that came before it in a Singly-Linked List. How would you do it?&lt;/p&gt;
+
+&lt;p&gt;The answer is: &lt;a href='http://stackoverflow.com/questions/7198508/given-a-node-how-can-i-find-previous-node-in-a-singly-linked-list'&gt;you can&amp;#8217;t&lt;/a&gt;. At least, not in a way that would be nearly as efficient as just creating a Doubly-Linked list. Of course, you could try and navigate the heap and look for a node object and check to see if the &lt;code&gt;*next&lt;/code&gt; pointer was equal to whatever your current memory location but let&amp;#8217;s face it, that&amp;#8217;s not an ideal solution.&lt;/p&gt;
+
+&lt;p&gt;As mentioned previously, a Doubly-Linked List is merely a Singly-Linked List with information about its predecessor. To accomplish this, we modify the struct to the following:&lt;/p&gt;
+&lt;div&gt;
+  &lt;pre&gt;&lt;code class='C'&gt;typedef struct node(){
+	struct node *next;
+	struct node *prev;
+	int data;
+}node;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Now, we have both a pointer to the node that&amp;#8217;s in front and to the node that is previous to it. At this point we should ask ourselves, how do we &lt;em&gt;use&lt;/em&gt; these newly created nodes? First, let&amp;#8217;s think about what exactly these nodes are supposed to do. They&amp;#8217;re supposed to tell us what&amp;#8217;s in front of it and what came before it. If we&amp;#8217;re going to instantiate a new Linked List, we should consider what exactly should go into the first element.&lt;/p&gt;
+
+&lt;p&gt;If this element is the first element that is created, can it have a previous node? Can it have a successor node? Of course not. Again, imagine if you began constructing a train. The first car that you use will not be connected to anything. In the same vein, the first node will not have a &lt;code&gt;*next&lt;/code&gt; or a &lt;code&gt;*prev&lt;/code&gt; pointer. Instead, to indicate that this is the first item in the list, we will set &lt;code&gt;*next&lt;/code&gt; to &lt;code&gt;NULL&lt;/code&gt; and to indicate that this is the last item in the list, we will set &lt;code&gt;*prev&lt;/code&gt; to &lt;code&gt;NULL&lt;/code&gt;. Since the first car is both the first and the last part of the list, both will be null.&lt;/p&gt;
+&lt;div&gt;
+  &lt;pre&gt;&lt;code class='C'&gt;bool insertInFront(node  **head, int data){
+	node *newNode = malloc(sizeOf(node));
+	If(!newNode){return false;}
+	newNode-&amp;gt;data = data;
+	newNode-&amp;gt;next = *head;
+	*head = newNode;
+	return true;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Let&amp;#8217;s go line by line. In the first line of the function, we&amp;#8217;re allocating memory for the new node by using the method &lt;code&gt;malloc&lt;/code&gt; and getting the size through &lt;code&gt;sizeOf&lt;/code&gt;. Next, we should check whether or not the memory was allocated correctly by checking the existence of &lt;code&gt;newNode&lt;/code&gt;. Finally, we being setting the values of the node. Firstly, the data is set. This shouldn&amp;#8217;t require much additional explanation. The next line however, is a bit tricky. Many people are tempted to write the pointer as &lt;code&gt;newNode-&amp;gt;next = head&lt;/code&gt;. After all, the head variable is given to you. However, if you were to write that, the next pointer wouldn&amp;#8217;t be pointing at a location in memory at all. Instead, it would be pointing at the local head variable. Now, again, the next line could also cause people to write &lt;code&gt;head = newNode&lt;/code&gt;. Instead, what should be done is &lt;code&gt;*head = newNode&lt;/code&gt;. Now, we&amp;#8217;re correctly setting the pointer for head to the newNode we just created. Finally, we return true when the function completes successfully.&lt;/p&gt;
+
+&lt;p&gt;Now, to insert a new node, we must take into consideration the same questions as before. Where is the next node in the list? Does the next node even exist? What about the previous node?&lt;/p&gt;
+
+&lt;p&gt;To Be Continued.&lt;/p&gt;</description>
+        <pubDate>2015-07-23 05:00:00 -0400</pubDate>
+        <link>localhost/interviewprep/2015/07/23/Programming-Interview-Practice.html</link>
+        <guid isPermaLink="true">localhost/interviewprep/2015/07/23/Programming-Interview-Practice.html</guid>
+        
+        
+        <category>interviewprep</category>
+        
+      </item>
+    
+      <item>
+        <title>Building a Modern Apple Extended Keyboard</title>
+        <description>&lt;img class='responsive-img' src='http://i.imgur.com/7IEtL3z.jpg' /&gt;
+&lt;p&gt;Last summer I saw a Vintage Apple Extended Keyboard II and instantly fell in love with the keycaps that were on it. Weird, I know. Korean keyboard enthusiast Sprit &lt;a href='https://geekhack.org/?topic=49930.0'&gt;posted some pictures&lt;/a&gt; on the popular Mechanical Keyboard forum Geekhack and I immediately told myself I needed to build one for myself.&lt;/p&gt;
+
+&lt;p&gt;That was essentially the start of what I would consider my now &amp;#8220;hardcore&amp;#8221; keyboard hobby. I had previously seen and heard of mechanical keyboards before &amp;#8211; in fact, the very first keyboard I had ever typed on was a Silicon Graphics AT101, with cream dampened ALPS switches. I could tell at the time that the keyboard felt much, much better than the alternative rubber dome keyboard that was included with my family&amp;#8217;s new computer but I didn&amp;#8217;t know why&amp;#8230; at the time. All I knew was that even after my dad had moved the old keyboard out and plugged in the new one, I instantly disliked the typing experience.&lt;/p&gt;
+
+&lt;h5 id='a_brief_history_of_mechanical_keyboards_and_the_aekii'&gt;A Brief History of Mechanical Keyboards and the AEKII&lt;/h5&gt;
+
+&lt;p&gt;Now, while I had never actually typed on an AEKII (Apple Extended Keyboard II) before, many models of the AEKII used the same keyswitches as that old SGI board that I had loved growing up. Sadly, after computers got much more popular (we&amp;#8217;re talking early 90&amp;#8217;s) manufacturers decided that it was far too costly to include these beautifully crafted and engineered things called &amp;#8220;Mechanical Keyboards&amp;#8221;. Nowadays, keyboards are typically made by using some sort of circuit sheet or PCB, attaching a rubber sheet over top, and finally putting keycaps on top of that in some housing. Traditional mechanical keyboards used individual keyswitches, similar to the ones found in things like guitar pedals and car doors, to receive input from the user. Obviously, building a keyswitch for each key on a typical 108 key keyboard is costly. Furthermore, most computer users aren&amp;#8217;t as invested in using high quality input devices.&lt;/p&gt;
+
+&lt;p&gt;The first Apple Extended Keyboard II shipped in 1990 with the Macintosh II and SE. Needless to say, the keyboard is a part of computing history. Apple manufactured a variety of models of the keyboard with all sorts of various switches. The important fact though, is that these switches were all of the ALPS stem variety. ALPS, a Japanese electronics company, produced its ALPS switches from as early as 1983. Sadly, it no longer produces keyboard switches as the market has become more and more niche.&lt;/p&gt;
+
+&lt;h5 id='enter_matias'&gt;Enter Matias&lt;/h5&gt;
+
+&lt;p&gt;Matias, an American company that mainly produces Apple Macintosh accessories was well invested in creating mechanical keyboards for Apple/Mac users. Once ALPS decided to stop the production of its keyswitches, the Matias company took it open itself to begin producing keyswitches of its own, now known as the Matias Quiet Click, Matias Click, and Matias Linear switches.&lt;/p&gt;
+
+&lt;p&gt;For this build, I purchased 200 Matias Quiet Click switches directly from them for $60 shipped. This would be more than enough to build at least three 60% alps board if I wanted.&lt;/p&gt;
+
+&lt;h5 id='matias_quiet_click_keyswitch_review'&gt;Matias Quiet Click Keyswitch Review&lt;/h5&gt;
+&lt;img class='responsive-img' src='http://www.micwil.com/images/gallery/matias_mini_quiet_pro_p3_825x600.jpg' /&gt;
+&lt;p&gt;Contrary to popular belief, not all mechanical keyboards are necessarily loud. In fact, when Matias claims that the Quiet Click switches are quiet, they mean it. They&amp;#8217;re much less loud than Cherry MX Blues and Greens of course, and by my ear, even a lot quieter than Cherry MX Clears or Cherry MX Browns. This made it the perfect option to use as a keyboard to bring and use at work.&lt;/p&gt;
+
+&lt;p&gt;In terms of feel, the Matias Quiet Click switches are a very good option for those that may think that the widly available Cherry MX Blue, Browns, and Reds are too soft but may want to stay away from the stiffer Cherry MX Clear. In my mind these switches&amp;#8217; required actuation force is a very good balance between the stiffness of a Cherry MX Clear and the lightness of a Cherry MX Brown. In fact, I am quite close to counting these switches as my favorite switch of all time.&lt;/p&gt;
+&lt;table class='u-full-width'&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Switch Name&lt;/th&gt;&lt;th&gt;Actuation Force&lt;/th&gt;&lt;th&gt;Type&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;Matias Quiet Click&lt;/td&gt;&lt;td style='text-align: left;'&gt;60±5 cN&lt;/td&gt;&lt;td style='text-align: left;'&gt;Tactile&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;Cherry MX Clear&lt;/td&gt;&lt;td style='text-align: left;'&gt;55 cN&lt;/td&gt;&lt;td style='text-align: left;'&gt;Tactile&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;Cherry MX Ergoclear&lt;/td&gt;&lt;td style='text-align: left;'&gt;45 cN&lt;/td&gt;&lt;td style='text-align: left;'&gt;Tactile&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;Cherry MX Blue&lt;/td&gt;&lt;td style='text-align: left;'&gt;45 cN&lt;/td&gt;&lt;td style='text-align: left;'&gt;Clicky&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;Topre&lt;/td&gt;&lt;td style='text-align: left;'&gt;45 cN&lt;/td&gt;&lt;td style='text-align: left;'&gt;Linear&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;Cherry MX Brown&lt;/td&gt;&lt;td style='text-align: left;'&gt;45 cN&lt;/td&gt;&lt;td style='text-align: left;'&gt;Tactile&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;Cherry MX Red&lt;/td&gt;&lt;td style='text-align: left;'&gt;45 cN&lt;/td&gt;&lt;td style='text-align: left;'&gt;Linear&lt;/td&gt;
+&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;Source: &lt;a href='http://www.deskthority.net'&gt;Deskthority&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, while on paper the Matias Quiet Click seem to be a much heavier switch than even a Cherry MX Clear, that has not been my experience in day to day use.&lt;/p&gt;
+
+&lt;h5 id='the_pcb_and_plate'&gt;The PCB and Plate&lt;/h5&gt;
+
+&lt;p&gt;Originally, I had planned on handwiring the board together, using diodes and spare wire to connect each switch individually. thankfully, Hasu on geekhack started a group buy for his Alps64 PCB which I immediately jumped on. As that was going into production and people were placing their orders, geekhacker nubbinator also set up a group buy for a stainless steel AEKII plate which I also joined as well.&lt;/p&gt;
+
+&lt;h5 id='putting_it_all_together'&gt;Putting it all together&lt;/h5&gt;
+
+&lt;p&gt;To finally assemble everything, all I had to do was solder the through-hole diodes that Hasu included, and install the switches on the plate and solder those in. All in all, the total time that was required was probably around a few hours. Now, it was time for the fun part.&lt;/p&gt;
+
+&lt;p&gt;Arguably, the best part of using a TMK compatible controller is the ability to create up to 32 custom layers on the board, all accessible through certain key combinations. This was my first time writing custom firmware for the keyboard and writing layouts was some of the easiest programming I&amp;#8217;ve done in a long time. For those that aren&amp;#8217;t at all familiar with programming this could pose a challenge but luckily to get up and running it really doesn&amp;#8217;t require a whole lot of expertise.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='https://geekhack.org/index.php?topic=71416.0'&gt;AEKII Plate Group Buy&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='https://geekhack.org/index.php?topic=69740.0'&gt;60% Alps PCB&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;To Program the keyboard, you&amp;#8217;ll need to clone TMK&amp;#8217;s keyboard firmware repository from his &lt;a href='https://github.com/tmk/tmk_keyboard'&gt;github&lt;/a&gt;. There, you&amp;#8217;ll find all the resources necessary to start writing your layouts. &lt;a href='https://github.com/thisisshi/tmk_keyboard/blob/master/keyboard/alps64/Guide.md'&gt;Here&amp;#8217;s&lt;/a&gt; a detailed, step by step way to get started.&lt;/p&gt;
+
+&lt;p&gt;And, that&amp;#8217;s it! Now, check out some beauty shots of the keyboard:&lt;/p&gt;
+&lt;img class='responsive-img' src='http://i.imgur.com/9eOwwh7.jpg' /&gt;&lt;img class='responsive-img' src='http://i.imgur.com/U8ExaaZ.jpg' /&gt;
+&lt;p&gt;Thanks for reading!&lt;/p&gt;</description>
+        <pubDate>2015-07-22 15:00:44 -0400</pubDate>
+        <link>localhost/keyboards/2015/07/22/building-a-modern-apple-extended-keyboard.html</link>
+        <guid isPermaLink="true">localhost/keyboards/2015/07/22/building-a-modern-apple-extended-keyboard.html</guid>
+        
+        
+        <category>keyboards</category>
+        
+      </item>
+    
+  </channel>
+</rss>

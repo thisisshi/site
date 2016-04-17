@@ -60,11 +60,11 @@
     <article class="post-content">
       <p>Out of all the classes that I’m taking right now in my penultimate (!!) semester at OSU, the most interesting one is probably <em>Linguistics 3801: Codes and Code Breaking</em>. Not only was I pretty enthralled with the 2014 Academy Award Winning Film <em>The Imitation Game</em>, I’ve always been at least generally interested in codes and code breaking, mostly from a <em>“Hm, that’s pretty cool, I woudn’t have thought to do it that way”</em> sort of way.</p>
 
-<p>To assist with breaking some of the ciphers in the class and in an effort to <em>finally</em> start learning AngularJS, I decided that I would build a tool to help assist me with some of this code breaking. Currently, the name of the application is called theh “Angular Frequency Analyzer” which will no doubt change as the class progresses and I realize that I need to use additional tools other than frequency analysis.</p>
+<p>To assist with breaking some of the ciphers in the class and in an effort to <em>finally</em> start learning AngularJS, I decided that I would build a tool to help assist me with some of this code breaking. Currently, the name of the application is called the “Angular Frequency Analyzer” which will no doubt change as the class progresses and I realize that I need to use additional tools other than frequency analysis.</p>
 
 <p>The first cipher we encountered was the Caesar shift, which while incredibly easy to crack, my application (in its current form) doesn’t quite support yet.</p>
 
-<p><em>Note: It is indeed possible to crack a ceasear shift with frequency analysis, but the amount of work involved in doing so would be a lot less efficient than even hand writing out each shift</em></p>
+<p><em>Note: It is indeed possible to crack a Caesar shift with frequency analysis, but the amount of work involved in doing so would be a lot less efficient than even hand writing out each shift</em></p>
 
 <p>This application is best suited for cracking general monoalphabetic ciphers by hand with the applicationi assisting in some of the grunt work of counting all the instances of each letter and turning them into more user friendly percentages. Included in the application is a table of the frequency of English letters from <a href="http://www.math.cornell.edu/~mec/2003-2004/cryptography/subs/frequencies.html">the Math Explorers Club of Cornell University</a>.</p>
 
@@ -79,7 +79,7 @@
   <li>To display the results in a graphically pleasing manner</li>
 </ol>
 
-<p>To satisfy the first one, I just had to do some string manipulation and analysis. A call to the function `` takes in the current input that the user has provided and begins to calculate the frequency of each character in the string. At first, I approached this by writing a huge switch case statement which technically would do the trick but at the cost of having a huge block of code that could be more efficently written.</p>
+<p>To satisfy the first one, I just had to do some string manipulation and analysis. A call to the function `` takes in the current input that the user has provided and begins to calculate the frequency of each character in the string. At first, I approached this by writing a huge switch case statement which technically would do the trick but at the cost of having a huge block of code that could be more efficiently written.</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>	<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">$scope</span><span class="p">.</span><span class="nx">cryptInput</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
 				<span class="k">switch</span><span class="p">(</span><span class="nx">$scope</span><span class="p">.</span><span class="nx">cryptInput</span><span class="p">[</span><span class="nx">i</span><span class="p">]){</span>
@@ -147,7 +147,7 @@
 
     </div>
     
-    <footer class="page-footer grey darken-3 z-depth-5">
+    <footer class="page-footer cyan darken-3">
   <div class="container">
     <div class="row">
       <div class="col l6 s12">
@@ -161,11 +161,13 @@
           <li><a class="grey-text text-lighten-3" href="https://www.github.com/thisisshi">Code: Github</a></li>
           <li><a class="grey-text text-lighten-3" href="https://www.behance.net/lishi">Design: Behance</a></li>
           <li><a class="grey-text text-lighten-3" href="https://www.soundcloud.com/thisisshi">Beats: Soundcloud</a></li>
+          <li><a class="grey-text text-lighten-3"href="/content/resume.pdf">Résumé</a></li>
+          <li><a class="grey-text text-lighten-3"href = "mailto:theli@outlook.com">Contact Me</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="footer-copyright">
+  <div class="footer-copyright cyan darken-4">
     <div class="container">
     © 2016 Sonny Shi
     <h6 class="right" style="padding-top:10px"> <i class="fa fa-heart"></i> Open Source </h6>
