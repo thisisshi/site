@@ -6,7 +6,7 @@ categories: keyboards
 ---
 <img src="http://i.imgur.com/7IEtL3z.jpg" class="responsive-img">
 
-Last summer I saw a Vintage Apple Extended Keyboard II and instantly fell in love with the keycaps that were on it. Weird, I know. Korean keyboard enthusiast Sprit [posted some pictures](https://geekhack.org/?topic=49930.0) on the popular Mechanical Keyboard forum Geekhack and I immediatly told myself I needed to build one for myself.
+Last summer I saw a Vintage Apple Extended Keyboard II and instantly fell in love with the keycaps that were on it. Weird, I know. Korean keyboard enthusiast Sprit [posted some pictures](https://geekhack.org/?topic=49930.0) on the popular Mechanical Keyboard forum Geekhack and I immediately told myself I needed to build one for myself.
 
 That was essentially the start of what I would consider my now "hardcore" keyboard hobby. I had previously seen and heard of mechanical keyboards before -- in fact, the very first keyboard I had ever typed on was a Silicon Graphics AT101, with cream dampened ALPS switches. I could tell at the time that the keyboard felt much, much better than the alternative rubber dome keyboard that was included with my family's new computer but I didn't know why... at the time. All I knew was that even after my dad had moved the old keyboard out and plugged in the new one, I instantly disliked the typing experience.
 
@@ -47,13 +47,13 @@ Now, while on paper the Matias Quiet Click seem to be a much heavier switch than
 
 ##### The PCB and Plate #####
 
-Originally, I had planned on handwiring the board together, using diodes and spare wire to connect each switch individually. thankfully, Hasu on geekhack started a group buy for his Alps64 PCB which I immediatly jumped on. As that was going into production and people were placing their orders, geekhacker nubbinator also set up a group buy for a stainless steel AEKII plate which I also joined as well.
+Originally, I had planned on handwiring the board together, using diodes and spare wire to connect each switch individually. thankfully, Hasu on geekhack started a group buy for his Alps64 PCB which I immediately jumped on. As that was going into production and people were placing their orders, geekhacker nubbinator also set up a group buy for a stainless steel AEKII plate which I also joined as well.
 
 ##### Putting it all together #####
 
 To finally assemble everything, all I had to do was solder the through-hole diodes that Hasu included, and install the switches on the plate and solder those in. All in all, the total time that was required was probably around a few hours. Now, it was time for the fun part.
 
-Arguably, the best part of using a TMK compatible controller is the ability to create up to 32 custom layers on the board, all accessable through certain key combinations. This was my first time writing custom firmware for the keyboard and writing layouts was some of the easiest programming I've done in a long time. For those that aren't at all familiar with programming this could pose a challenge but luckily to get up and running it really doesn't require a whole lot of expertise.
+Arguably, the best part of using a TMK compatible controller is the ability to create up to 32 custom layers on the board, all accessible through certain key combinations. This was my first time writing custom firmware for the keyboard and writing layouts was some of the easiest programming I've done in a long time. For those that aren't at all familiar with programming this could pose a challenge but luckily to get up and running it really doesn't require a whole lot of expertise.
 
 [AEKII Plate Group Buy](https://geekhack.org/index.php?topic=71416.0)
 

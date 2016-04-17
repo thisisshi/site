@@ -13,7 +13,7 @@ Since teaching a subject is a great indicator that you yourself have learned the
 
 Now, although I don't _plan_ on becoming a C programmer, it doesn't hurt to keep options open. One of the easiest ways to determine if someone has a real understanding of pointers in C is to ask them to describe and implement a linked list.
 
-For those that are unfamiliar, a linked list is basically a very nice data structure that you can sort of envision as a train. On a train there are various cars, and on those cars they carry certain things -- cargo, coal, people, etc. However, to successfully understand the train's structure, all you need to know is what each car is connected to in a singular direction. The car at the front is connected to nothing (null), and each subsequent car is connected to the one that is infront of it. Now, if you were unaware of how the train looked, if you were given a description of what each car was connected to, you could easily arrange them in the correct order.
+For those that are unfamiliar, a linked list is basically a very nice data structure that you can sort of envision as a train. On a train there are various cars, and on those cars they carry certain things -- cargo, coal, people, etc. However, to successfully understand the train's structure, all you need to know is what each car is connected to in a singular direction. The car at the front is connected to nothing (null), and each subsequent car is connected to the one that is in front of it. Now, if you were unaware of how the train looked, if you were given a description of what each car was connected to, you could easily arrange them in the correct order.
 
 Now, what does this model imply? First, it implies that each car carries some sort of object, or data. Secondly, it implies that each car knows what car it's connected to from the front. That's the pointer. In C, we use structs to describe the node in a linked list. Thus we have the following:
 
@@ -30,7 +30,7 @@ This is what's called a Singly-Linked list. Obviously, the first improvement we 
 
 The answer is: [you can't](http://stackoverflow.com/questions/7198508/given-a-node-how-can-i-find-previous-node-in-a-singly-linked-list). At least, not in a way that would be nearly as efficient as just creating a Doubly-Linked list. Of course, you could try and navigate the heap and look for a node object and check to see if the `*next` pointer was equal to whatever your current memory location but let's face it, that's not an ideal solution.
 
-As mentioned previously, a Doubly-Linked List is merely a Singly-Linked List with informaion about its predecessor. To accomplish this, we modify the struct to the following:
+As mentioned previously, a Doubly-Linked List is merely a Singly-Linked List with information about its predecessor. To accomplish this, we modify the struct to the following:
 
 {% highlight C %}
 typedef struct node(){
@@ -55,7 +55,7 @@ bool insertInFront(node  **head, int data){
 }
 {% endhighlight %}
 
-Let's go line by line. In the first line of the function, we're allocating memory for the new node by using the method `malloc` and geting the size through `sizeOf`. Next, we should check whether or not the memory was allocated correctly by checking the existence of `newNode`. Finally, we being setting the values of the node. Firstly, the data is set. This shouldn't require much additional explanation. The next line however, is a bit tricky. Many people are tempted to write the pointer as `newNode->next = head`. After all, the head variable is given to you. However, if you were to write that, the next pointer wouldn't be pointing at a location in memory at all. Instead, it would be pointing at the local head variable. Now, again, the next line could also cause people to write `head = newNode`. Instead, what should be done is `*head = newNode`. Now, we're correctly setting the pointer for head to the newNode we just created. Finally, we return true when the function completes successfully.
+Let's go line by line. In the first line of the function, we're allocating memory for the new node by using the method `malloc` and getting the size through `sizeOf`. Next, we should check whether or not the memory was allocated correctly by checking the existence of `newNode`. Finally, we being setting the values of the node. Firstly, the data is set. This shouldn't require much additional explanation. The next line however, is a bit tricky. Many people are tempted to write the pointer as `newNode->next = head`. After all, the head variable is given to you. However, if you were to write that, the next pointer wouldn't be pointing at a location in memory at all. Instead, it would be pointing at the local head variable. Now, again, the next line could also cause people to write `head = newNode`. Instead, what should be done is `*head = newNode`. Now, we're correctly setting the pointer for head to the newNode we just created. Finally, we return true when the function completes successfully.
 
 Now, to insert a new node, we must take into consideration the same questions as before. Where is the next node in the list? Does the next node even exist? What about the previous node?
 
