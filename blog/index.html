@@ -6,16 +6,14 @@ layout: default
   <h5>The Blog</h5>
   <div class="row">
     {% for post in site.posts %}
-      <div class="col sm12 m6 l6">
-        <div class="card hoverable">
-          <div class="card-content">
-            <span class="card-title"><a href="{{post.url}}">{{post.title}}</a></span>
-            <p style="font-style:italic; padding-bottom:10px">{{ post.date | date_to_string }}</p>
-            <p>{{ post.content | strip_html | truncatewords:70}}</p>
-          </div>
-          <div class="card-action">
-            <a href="{{ post.url }}">Read more...</a><br><br>
-          </div>
+      <div class="card hoverable">
+        <div class="card-content">
+          <span class="card-title"><a href="{{post.url}}">{{post.title}}</a></span>
+          <p style="font-style:italic; padding-bottom:10px">{{ post.date | date_to_string }}</p>
+          <p>{{ post.content | strip_html | truncatewords:70}}</p>
+        </div>
+        <div class="card-action">
+          <a href="{{ post.url }}">Read more...</a><br><br>
         </div>
       </div>
     {% endfor %}
