@@ -1,2 +1,1 @@
 # sonnyshi.com
-personal site
