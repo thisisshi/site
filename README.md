@@ -1,4 +1,1 @@
 # sonnyshi.com
-
-Personal site
-
