@@ -1,0 +1,49 @@
+baseURL =  "/"
+languageCode = "en-us"
+title = "Sonny Shi"
+theme = "pristine"
+pygmentsCodeFences = true
+canonifyURLs = false
+enableEmoji = true
+
+[params]
+  portrait = "img/portrait.jpg"
+
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "All Articles"
+  url = "/post/"
+  weight = 2
+
+[[menu.projects]]
+  name = "Cloud Custodian"
+  url = "https://github.com/cloud-custodian/cloud-custodian"
+  weight = 1
+
+[[menu.projects]]
+  name = "SoftwareEngineerLatexResume"
+  url = "https://github.com/thisisshi/SoftwareEngineerLatexResume"
+  weight = 2 
+
+[[menu.projects]]
+  name = "dotfiles"
+  url = "https://github.com/thisisshi/dotfiles"
+  weight = 3
+
+[[params.social]]
+    title = "Email"
+    url = "mailto:hi@sonnyshi.com"
+[[params.social]]
+    title = "Follow @winebaths"
+    url = "https://twitter.com/winebaths"
+[[params.social]]
+    title = "Github"
+    url = "https://github.com/thisisshi"
+[[params.social]]
+    title = "LinkedIn"
+    url = "https://linkedin.com/in/sonnyshi"
