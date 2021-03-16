@@ -1,9 +1,12 @@
-[submodule "public"]
-	path = /public
-	url = https://github.com/thisisshi/thisisshi.github.io.git
-	branch = master
-
-[submodule "pristine"]
-  path = /themes/pristine
+[submodule "themes/pristine"]
+  path = themes/pristine
   url = https://github.com/sakibccr/pristine.git
   branch = master
+
+[submodule "public"]
+	path = public
+	url = git@github.com:thisisshi/thisisshi.github.io.git
+  branch = master
+[submodule "thisisshi.github.io"]
+	path = thisisshi.github.io
+	url = git@github.com:thisisshi/thisisshi.github.io.git

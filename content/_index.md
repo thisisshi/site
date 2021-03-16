@@ -1,6 +1,6 @@
-# [Sonny Shi](https://www.sonnyshi.com)
+# [Sonny Shi](https://shi.dev)
 
-### Technical Lead - Cloud Custodian
+### Principal Software Engineer - Stacklet
 
 Python, Containers, Cloud Security
 
@@ -9,10 +9,41 @@ Python, Containers, Cloud Security
 <hr />
 
 <br />
+## Stacklet
+</hr >
+
+### Principal Software Engineer
+
+Building Stacklet.
+
+
+<br />
+## Hulu
+<hr />
+
+### Cloud Engineering (July 2019 - Feb 2021)
+
+**Senior Software Engineer**
+
+Built AWS account automation services to stand up accounts on demand
+pre-configured with VPC peering, base roles, integrations into vendor
+services and connectivity to existing datacenter/other AWS accounts.
+
+Built services for reporting and inspection of accounts and account
+resources through with automated notifications to users about non-compliant
+resources.
+
+Built services to allow users to obtain break-glass IAM permissions in the
+case of an outage or incident with full audit tracability.
+
+Introduced and matured team with test driven development and overall code
+quality ratcheting.
+
+<br />
 ## Capital One
 <hr />
 
-### Cloud Custodian (July 2018 - Present)
+### Cloud Custodian (July 2018 - June 2019)
 
 **Cloud Custodian Maintainer**
 

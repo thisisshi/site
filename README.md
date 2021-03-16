@@ -2,6 +2,14 @@
 
 source files for personal site
 
+## Installation
+
+Install Hugo: https://gohugo.io
+
+```shell
+$ git clone --recurse-submodules --remote-submodules git@github.com:thisisshi/site.git
+```
+
 ### Deployment
 
 To deploy, run:
