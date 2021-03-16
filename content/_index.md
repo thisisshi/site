@@ -10,7 +10,7 @@ Python, Containers, Cloud Security
 
 <br />
 ## Stacklet
-</hr >
+<hr />
 
 ### Principal Software Engineer
 
