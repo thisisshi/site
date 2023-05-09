@@ -95,3 +95,5 @@ responsible for customer acquisition and application processing.
 
 ### The Ohio State University
 Bachelors of Computer Science and Engineering, Class of 2016
+
+<a rel="me" href="https://mastodon.social/@winebaths">Mastodon</a>

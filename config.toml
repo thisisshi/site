@@ -6,6 +6,9 @@ pygmentsCodeFences = true
 canonifyURLs = false
 enableEmoji = true
 
+[markup.goldmark.renderer]
+  unsafe= true
+
 [params]
   portrait = "img/portrait.jpg"
 
@@ -47,3 +50,6 @@ enableEmoji = true
 [[params.social]]
     title = "LinkedIn"
     url = "https://linkedin.com/in/sonnyshi"
+[[params.social]]
+    title = "Mastodon"
+    url = "https://mastodon.social/@winebaths"

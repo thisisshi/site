@@ -189,5 +189,19 @@ There are certainly resources out there for figuring out how to get up and runni
 
 If you have a great `.tmux.conf`, `.bashrc`, etc., you might be able to switch over relatively easily. But, until Microsoft fixes some of the random exant issues with things like [`dbus` not properly starting](https://github.com/Microsoft/WSL/issues/376), or [WSL randomly having issues finding certain files](https://github.com/Microsoft/WSL/issues/2448), this is kind of a futile exercise. You can certainly _get stuff done_, at the expense of spending a ton of time _getting stupid stuff done_.
 
-
-
+<script src="https://giscus.app/client.js"
+        data-repo="thisisshi/comments.shi.dev"
+        data-repo-id="R_kgDOJhHSDg"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOJhHSDs4CWYeN"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
