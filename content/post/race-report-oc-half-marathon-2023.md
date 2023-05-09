@@ -80,3 +80,21 @@ Overall, training and racing were both way more enjoyable than I had imagined. I
 
 
 *This post was generated using [the new race-reportr](https://coachview.github.io/race-reportr/), powered by [coachview](https://www.coachview.io), for making organized, easy-to-read, and beautiful race reports.*
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="thisisshi/comments.shi.dev"
+        data-repo-id="R_kgDOJhHSDg"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOJhHSDs4CWYeN"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
