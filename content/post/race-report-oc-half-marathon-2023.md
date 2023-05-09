@@ -1,4 +1,9 @@
-Race Report - OC Half Marathon 2023
+---
+title: Race Report - OC Half Marathon 2023
+date: 2023-05-07
+draft: false
+tag: Running, Fitness, Half-Marathon
+---
 
 ### Race information
 * **What?** OC Marathon
